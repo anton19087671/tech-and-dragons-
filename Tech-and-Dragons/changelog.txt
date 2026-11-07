@@ -1,5 +1,13 @@
 TECH & DRAGONS — BALANCED EDITION · ИСТОРИЯ ИЗМЕНЕНИЙ
 
+v1.0.2 (08.11.2026)
+- Добавлен ресурспак resourcepacks\Retro-DE-Models.zip: классические 3D-модели
+  инструментов Draconic Evolution из 1.12.2 (взяты из Retro Draconic, автор Ocle_42, MIT).
+  Сам мод Retro Draconic НЕ добавлен: он меняет прогрессию Draconic (бета-версия).
+  Чтобы модели заработали, в config\brandon3055\DraconicEvolution.cfg нужно
+  поставить B:"fancyToolModels"=false (иначе Draconic рисует инструменты сам).
+  Броня остаётся в новом виде. У луков нет анимации натяжения.
+
 v1.0.1 (08.11.2026)
 - Добавлен Kotlin for Forge 4.12.0: без него не загружались Inventory Profiles Next и libIPN
   (клиентские моды, поэтому проверка на выделенном сервере это не выявила).
