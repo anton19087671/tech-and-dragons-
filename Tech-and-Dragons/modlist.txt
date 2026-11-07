@@ -1,0 +1,125 @@
+﻿TECH & DRAGONS — BALANCED EDITION
+Minecraft 1.20.1 · Forge 47.4.28 (минимум 47.3.0) · Java 17
+
+Модов: 73, библиотек: 32, всего файлов: 105
+
+== Промышленность и энергия (13)
+  Ad Astra — 1.15.21
+  Create — mc1.20.1-6.0.8
+  Create Crafts & Additions — forge-1.20.1-1.3.3
+  Draconic Evolution — 3.1.2.621
+  Extreme Reactors — 1.20.1-2.0.84
+  Industrial Foregoing — 1.20.1-3.5.22   [статус: beta]
+  Industrial Upgrade — 3.4.0.11
+  Mekanism — 10.4.16.80
+  Mekanism Additions — 10.4.16.80
+  Mekanism Generators — 10.4.16.80
+  Mekanism Tools — 10.4.16.80
+  Thermal Expansion — 11.0.1
+  Thermal Foundation — 11.0.6
+
+== Хранение и логистика (9)
+  AE2 Things — AE2 Things v1.2.1
+  Applied Energistics 2 — 15.4.12
+  CC: Tweaked — 1.121.0
+  ExtendedAE — ExtendedAE-1.20-1.4.22-forge.jar
+  Flux Networks — Flux-Networks-1.20.1-7.2.1
+  Functional Storage — 1.20.1-1.2.14   [статус: beta]
+  LaserIO — LaserIO-1.6.8
+  Sophisticated Backpacks — 1.20.1-3.26.19.2239
+  Sophisticated Storage — 1.20.1-1.5.15.2220
+
+== Приключения и мир (13)
+  Alex's Caves — 2.0.2
+  Alex's Mobs — 1.22.9
+  Artifacts — 9.5.19
+  Biomes O' Plenty — 18.0.0.592
+  Blue Skies — 1.3.31
+  L_Ender's Cataclysm — 3.31
+  Mowzie's Mobs — 1.8.2
+  Terralith — 2.5.4
+  When Dungeons Arise — 2.1.58-1.20.x
+  YUNG's Better Dungeons — 1.20-Forge-4.0.4
+  YUNG's Better Mineshafts — 1.20-Forge-4.0.4
+  YUNG's Better Nether Fortresses — 1.20-Forge-2.0.6
+  YUNG's Better Strongholds — 1.20-Forge-4.0.3
+
+== Зачарование (3)
+  Easy Anvils — v8.0.2-1.20.1-Forge
+  Enchanting Infuser — v8.0.3-1.20.1-Forge
+  Enchantment Transfer — 0.0.6
+
+== Удобство и квесты (16)
+  AppleSkin — 2.5.1+mc1.20.1
+  Controlling — 12.0.2   [только клиент]
+  Explorer's Compass — 1.20.1-1.4.0-forge
+  FTB Chunks — ftb-chunks-forge-2001.3.8.jar
+  FTB Library — ftb-library-forge-2001.2.13.jar
+  FTB Quests — ftb-quests-forge-2001.4.22.jar
+  FTB Teams — ftb-teams-forge-2001.3.2.jar
+  Inventory Profiles Next — forge-1.20.1-1.10.20   [только клиент]
+  Jade — 11.13.3+forge
+  JourneyMap — 1.20.1-6.0.7+forge
+  Just Enough Items — 15.56.0.205
+  Lootr — 0.7.35.94
+  Mouse Tweaks — 1.20.1-2.25.1-forge   [только клиент]
+  Nature's Compass — 1.20.1-1.12.0-forge
+  Patchouli — 1.20.1-85-forge
+  Waystones — 14.1.21+forge-1.20.1
+
+== Оптимизация, графика, звук (10)
+  AmbientSounds — 6.3.11   [только клиент]
+  Clumps — 12.0.0.4
+  Dynamic FPS — 3.11.4   [только клиент]
+  Embeddium — 0.3.31+mc1.20.1   [только клиент]
+  Entity Culling — 1.11.3   [только клиент]
+  FerriteCore — 6.0.1
+  ImmediatelyFast — 1.5.5+1.20.4-forge   [только клиент]
+  ModernFix — 5.27.91+mc1.20.1
+  Oculus — 1.20.1-1.8.0   [только клиент]
+  Sound Physics Remastered — forge-1.20.1-1.5.1   [только клиент]   [статус: alpha]
+
+== Дополнительно (9)
+  Almost Unified — 1.20.1-0.11.0+forge   [статус: beta]
+  Chunky — 1.3.146
+  Construction Wand — 1.20.1-2.11
+  ElevatorMod — 1.20.1-1.9.1-forge
+  Jade Addons (Neo/Forge) — 5.5.1+forge
+  Just Enough Resources — 1.4.0.247   [статус: beta]
+  KubeJS — 2001.6.5-build.26+forge
+  spark — 1.10.53-forge
+  Trash Cans — 1.1.2-forge-mc1.20.4
+
+== Библиотека (зависимость) (32)
+  architectury — 9.2.14+forge
+  balm — 7.3.44+forge-1.20.1
+  botarium — 2.3.4
+  brandonscore — 3.2.1.302
+  citadel — 2.6.3
+  cloth_config — 11.1.136+forge
+  codechickenlib — 4.4.0.528
+  cofh_core — 11.0.2
+  creativecore — 2.12.40
+  curios — 5.14.1+1.20.1
+  expandability — ExpandAbility [Forge 1.20-1.20.1] v9.0.4
+  geckolib — 4.8.4
+  glodium — 1.20-1.5-forge
+  guideme — 20.1.15
+  libipn — forge-1.20-4.0.2   [только клиент]
+  lionfishapi — 3.0
+  Power Utilities — 1.8
+  puzzleslib — 8.1.36
+  Quantum Generators — 1.7
+  resourcefulconfig — 2.1.3
+  resourcefullib — 2.1.29
+  rhino — 2001.2.3-build.10+forge
+  searchables — 1.0.3   [только клиент]
+  Simply Quarries — 1.7
+  sophisticatedcore — 1.20.1-1.5.29.2459
+  structure_gel — 2.16.2
+  supermartijn642configlib — 1.1.8-forge-mc1.20
+  supermartijn642corelib — 1.1.26a-forge-mc1.20.1
+  terrablender — 3.0.1.11   [статус: beta]
+  titanium — 1.20.1-3.8.37   [статус: beta]
+  yungsapi — 1.20-Forge-4.0.6
+  zerocore — 1.20.1-2.1.45

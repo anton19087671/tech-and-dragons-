@@ -1,0 +1,481 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stage1"
+	group: ""
+	icon: "create:cogwheel"
+	id: "3B16555C579502F2"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3EBFDBBE87133552"]
+			description: ["Основа всего Create. Смешайте андезит с железными самородками."]
+			id: "74D8E77E9BA22C4C"
+			rewards: [
+				{ id: "3C07AD6BEB73E350", type: "xp", xp: 60 }
+			]
+			tasks: [
+				{ id: "55DD751DC519EDDC", item: "create:andesite_alloy", type: "item", count: 16L }
+			]
+			title: "Андезитовый сплав"
+			x: 0.00d
+			y: 0.00d
+		}
+		{
+			dependencies: ["74D8E77E9BA22C4C"]
+			description: ["Вал передаёт вращение — кровь механизмов Create."]
+			id: "32AE73EEDCDC5457"
+			rewards: [
+				{ id: "75E595353A5BED28", type: "xp", xp: 30 }
+			]
+			tasks: [
+				{ id: "597DF117444EB838", item: "create:shaft", type: "item", count: 8L }
+			]
+			title: "Валы"
+			x: 1.75d
+			y: -1.50d
+		}
+		{
+			dependencies: ["32AE73EEDCDC5457"]
+			description: ["Малые и большие шестерни меняют скорость и направление вращения."]
+			id: "5197F93CC4571B49"
+			rewards: [
+				{ id: "124A35D06D891EEE", type: "xp", xp: 40 }
+			]
+			tasks: [
+				{ id: "792B8F499DB0F2EC", item: "create:cogwheel", type: "item", count: 8L },
+				{ id: "3A63B03C2D4B21CB", item: "create:large_cogwheel", type: "item", count: 2L }
+			]
+			title: "Шестерни"
+			x: 3.50d
+			y: -2.25d
+		}
+		{
+			dependencies: ["5197F93CC4571B49"]
+			description: ["Первый источник вращения. Поставьте его у текущей воды."]
+			id: "7121D2E1D3E7BB0D"
+			rewards: [
+				{ id: "72CA850764610FCC", type: "xp", xp: 60 }
+			]
+			tasks: [
+				{ id: "70E2576C55EAD2C9", item: "create:water_wheel", type: "item" }
+			]
+			title: "Водяное колесо"
+			x: 5.25d
+			y: -1.50d
+		}
+		{
+			dependencies: ["7121D2E1D3E7BB0D"]
+			description: ["Подшипник и паруса дают сильное вращение без воды."]
+			id: "1C98C4181B8FA0E9"
+			rewards: [
+				{ id: "7B683DAA2CAF189D", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "5691E131DC00D86D", item: "create:windmill_bearing", type: "item" },
+				{ id: "7616526FAAD2D133", item: "create:white_sail", type: "item", count: 8L }
+			]
+			title: "Ветряк"
+			x: 7.00d
+			y: -1.50d
+		}
+		{
+			dependencies: ["5197F93CC4571B49"]
+			description: ["Очки показывают скорость и нагрузку механизмов. Без них Create играть сложно."]
+			id: "776DBF8D521A2359"
+			rewards: [
+				{ id: "53FD29473E9C656D", type: "xp", xp: 40 }
+			]
+			tasks: [
+				{ id: "3BB21C0789A384A9", item: "create:goggles", type: "item" }
+			]
+			title: "Очки инженера"
+			x: 5.25d
+			y: 0.00d
+		}
+		{
+			dependencies: ["5197F93CC4571B49"]
+			description: ["Ключ поворачивает и снимает блоки Create без потерь."]
+			id: "3A426444C19EEEFE"
+			rewards: [
+				{ id: "3FC46C84F39585A9", type: "xp", xp: 30 }
+			]
+			tasks: [
+				{ id: "70FE8B9B79B5CAF9", item: "create:wrench", type: "item" }
+			]
+			title: "Гаечный ключ"
+			x: 5.25d
+			y: 1.50d
+		}
+		{
+			dependencies: ["74D8E77E9BA22C4C"]
+			description: ["Корпуса нужны для механизмов и облицовки валов."]
+			id: "524EE609DDE23C96"
+			rewards: [
+				{ id: "3CBE25F777D835B6", type: "xp", xp: 50 }
+			]
+			tasks: [
+				{ id: "5E534CEF93792D2F", item: "create:andesite_casing", type: "item", count: 8L }
+			]
+			title: "Андезитовый корпус"
+			x: 1.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["7121D2E1D3E7BB0D"]
+			description: ["Перемалывает руду и зерно. Первый шаг к удвоению руды."]
+			id: "733817E7F4E9752B"
+			rewards: [
+				{ id: "30C511C9E825189A", type: "xp", xp: 60 }
+			]
+			tasks: [
+				{ id: "36030925C17B9CF0", item: "create:millstone", type: "item" }
+			]
+			title: "Жёрнов"
+			x: 7.00d
+			y: 0.00d
+		}
+		{
+			dependencies: ["524EE609DDE23C96", "7121D2E1D3E7BB0D"]
+			description: ["Пресс делает пластины. Поставьте его над конвейером или чашей."]
+			id: "113CA2C63C3D2CB7"
+			rewards: [
+				{ id: "549A14EEE1E6E6B3", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "177B93D4858A25F7", item: "create:mechanical_press", type: "item" }
+			]
+			title: "Механический пресс"
+			x: 7.00d
+			y: 1.50d
+		}
+		{
+			dependencies: ["113CA2C63C3D2CB7"]
+			description: ["Ремни соединяют валы и возят предметы — основа автоматизации."]
+			id: "3D5266ECC2A0A713"
+			rewards: [
+				{ id: "5351469DF571DA50", type: "xp", xp: 60 }
+			]
+			tasks: [
+				{ id: "702B5618B661B286", item: "create:belt_connector", type: "item", count: 8L }
+			]
+			title: "Конвейер"
+			x: 8.75d
+			y: -1.50d
+		}
+		{
+			dependencies: ["74D8E77E9BA22C4C"]
+			description: ["В чаше работают миксер и пресс для сложных рецептов."]
+			id: "7EC8F7CFA978927A"
+			rewards: [
+				{ id: "1C0188D8155729C6", type: "xp", xp: 40 }
+			]
+			tasks: [
+				{ id: "16DB35033B2B09DA", item: "create:basin", type: "item" }
+			]
+			title: "Чаша"
+			x: 1.75d
+			y: 1.50d
+		}
+		{
+			dependencies: ["7EC8F7CFA978927A", "113CA2C63C3D2CB7"]
+			description: ["Механический миксер готовит сплавы и смеси в чаше."]
+			id: "3BF7B1952C6D277E"
+			rewards: [
+				{ id: "1A71459BB28899DC", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "7C497ED278D71D5D", item: "create:mechanical_mixer", type: "item" }
+			]
+			title: "Миксер"
+			x: 8.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["524EE609DDE23C96"]
+			description: ["Обдув через огонь плавит, через воду моет, через лаву... тоже плавит. Массовая обработка без печей."]
+			id: "36B13A57439E969C"
+			rewards: [
+				{ id: "7500659FCEC64E53", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "32EE254CDF2ED81A", item: "create:encased_fan", type: "item" }
+			]
+			title: "Вентилятор"
+			x: 3.50d
+			y: -0.75d
+		}
+		{
+			dependencies: ["733817E7F4E9752B"]
+			description: ["Цинковую руду ищите на средних высотах. Нужна для латуни."]
+			id: "5AAF21AE86406B52"
+			rewards: [
+				{ id: "743F93EEBAC8551C", type: "xp", xp: 60 }
+			]
+			tasks: [
+				{ id: "3B7F6B6518E365C3", item: "create:zinc_ingot", type: "item", count: 16L }
+			]
+			title: "Цинк"
+			x: 8.75d
+			y: 1.50d
+		}
+		{
+			dependencies: ["5AAF21AE86406B52", "3BF7B1952C6D277E"]
+			description: ["Медь + цинк в нагретом миксере. Открывает средний уровень Create."]
+			id: "5BC115E6198EFC97"
+			rewards: [
+				{ id: "371652AEC0C20015", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "5E74A7D51A0A5598", item: "create:brass_ingot", type: "item", count: 16L }
+			]
+			title: "Латунь"
+			x: 10.50d
+			y: -1.50d
+		}
+		{
+			dependencies: ["3BF7B1952C6D277E"]
+			description: ["Поймайте ифрита в Незере. Горелка нагревает чашу для латуни и сложных сплавов."]
+			id: "3DFE8CD321E0AA72"
+			rewards: [
+				{ id: "38E16A30EA45A2E3", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "12542F6D6C06290D", item: "create:blaze_burner", type: "item" }
+			]
+			title: "Горелка ифрита"
+			x: 10.50d
+			y: 0.00d
+		}
+		{
+			dependencies: ["733817E7F4E9752B", "3D5266ECC2A0A713"]
+			description: ["Пара колёс дробит руду с шансом на дополнительную добычу — удвоение руды на потоке."]
+			id: "1BF8C9F177834B2F"
+			rewards: [
+				{ id: "5138F852AAC1F453", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "5DE3AF9FCCF15DCA", item: "create:crushing_wheel", type: "item", count: 2L }
+			]
+			title: "Дробильные колёса"
+			x: 10.50d
+			y: 1.50d
+		}
+		{
+			dependencies: ["5BC115E6198EFC97"]
+			description: ["Лампы нужны для умных механизмов Create."]
+			id: "7741594E3A3DA210"
+			rewards: [
+				{ id: "1C422CA2CDBE033A", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "33D582F642E09702", item: "create:electron_tube", type: "item", count: 4L }
+			]
+			title: "Электронные лампы"
+			x: 12.25d
+			y: -1.50d
+		}
+		{
+			dependencies: ["5BC115E6198EFC97"]
+			description: ["Корпус для продвинутой логистики и механических крафтеров."]
+			id: "3D38CFCBEEC3700E"
+			rewards: [
+				{ id: "33C8F480F4DD2261", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "7744E91332B3E267", item: "create:brass_casing", type: "item", count: 8L }
+			]
+			title: "Латунный корпус"
+			x: 12.25d
+			y: 0.00d
+		}
+		{
+			dependencies: ["7741594E3A3DA210", "3D38CFCBEEC3700E"]
+			description: ["Собирается по последовательному рецепту на конвейере. Настоящий экзамен на автоматизацию!"]
+			id: "7FC43DBE11FB7E44"
+			rewards: [
+				{ id: "1FE083A1F5DBDF92", type: "xp", xp: 200 },
+				{ id: "5148819231FC480C", item: "create:precision_mechanism", type: "item" }
+			]
+			tasks: [
+				{ id: "7D0641F896499A59", item: "create:precision_mechanism", type: "item" }
+			]
+			title: "Прецизионный механизм"
+			x: 14.00d
+			y: -2.25d
+		}
+		{
+			dependencies: ["7741594E3A3DA210"]
+			description: ["Манипулятор работает как рука игрока: ставит, использует, собирает."]
+			id: "53C3E11CF51E7E31"
+			rewards: [
+				{ id: "3AD6E2E9A5B3494C", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "324C24799BBBC402", item: "create:deployer", type: "item" }
+			]
+			title: "Манипулятор"
+			x: 14.00d
+			y: -0.75d
+		}
+		{
+			dependencies: ["524EE609DDE23C96"]
+			description: ["Бур на подвижной конструкции — первый автоматический карьер."]
+			id: "518B6CC945386EF2"
+			rewards: [
+				{ id: "5E553FE70AE55196", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "7231F1C16E6AF099", item: "create:mechanical_drill", type: "item" }
+			]
+			title: "Механический бур"
+			x: 3.50d
+			y: 0.75d
+		}
+		{
+			dependencies: ["524EE609DDE23C96"]
+			description: ["Собирает урожай на ходу. Сделайте автоматическую ферму."]
+			id: "739A9CCFBEC99D8B"
+			rewards: [
+				{ id: "1764F3FC2914547B", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "7E18382996B112CC", item: "create:mechanical_harvester", type: "item" }
+			]
+			title: "Механический комбайн"
+			x: 3.50d
+			y: 2.25d
+		}
+		{
+			dependencies: ["3DFE8CD321E0AA72", "5BC115E6198EFC97"]
+			description: ["Котёл из жидкостных баков + горелка = огромная мощность вращения."]
+			id: "17CB9539B5B77896"
+			rewards: [
+				{ id: "1E4540786BFFE83C", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "334D3BA30D6C6AA6", item: "create:steam_engine", type: "item" },
+				{ id: "58E6771310981156", item: "create:fluid_tank", type: "item", count: 4L }
+			]
+			title: "Паровой двигатель"
+			x: 12.25d
+			y: 1.50d
+		}
+		{
+			dependencies: ["3D38CFCBEEC3700E", "7741594E3A3DA210"]
+			description: ["Несколько крафтеров в сетке крафтят автоматически, даже большие рецепты 9×9."]
+			id: "7C1B19234B8B3BFD"
+			rewards: [
+				{ id: "7D0E60F9B06E52A1", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "1B134EB6A7E6BABA", item: "create:mechanical_crafter", type: "item", count: 4L }
+			]
+			title: "Механический крафтер"
+			x: 14.00d
+			y: 0.75d
+		}
+		{
+			dependencies: ["7FC43DBE11FB7E44"]
+			description: ["Точная настройка скорости вращения для больших заводов."]
+			id: "15D100AB1EBFA271"
+			rewards: [
+				{ id: "5E7C1C365A70E48D", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "380D2457EC4FBBFD", item: "create:rotation_speed_controller", type: "item" }
+			]
+			title: "Регулятор скорости"
+			x: 15.75d
+			y: -3.00d
+		}
+		{
+			dependencies: ["7FC43DBE11FB7E44"]
+			description: ["Рельсы для поездов Create: возите руду из дальних шахт."]
+			id: "5B089D0A6AA6CC3F"
+			rewards: [
+				{ id: "33F4C8C42EE7924F", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "7DBE66B34F93EB81", item: "create:track", type: "item", count: 32L }
+			]
+			title: "Железная дорога"
+			x: 15.75d
+			y: -1.50d
+		}
+		{
+			dependencies: ["17CB9539B5B77896"]
+			description: ["Create Crafts & Additions превращает вращение в энергию FE — мост к электрическим модам."]
+			id: "75C6CFC22F58941F"
+			rewards: [
+				{ id: "15623210CA19731F", type: "xp", xp: 200 },
+				{ id: "1FD61467BBDBAEBE", item: "createaddition:copper_spool", type: "item", count: 4 }
+			]
+			tasks: [
+				{ id: "378E1E2D003AAD73", item: "createaddition:alternator", type: "item" }
+			]
+			title: "Генератор тока"
+			x: 14.00d
+			y: 2.25d
+		}
+		{
+			dependencies: ["75C6CFC22F58941F"]
+			description: ["Провода и коннекторы передают FE по воздуху."]
+			id: "348C64DA9A0738E0"
+			rewards: [
+				{ id: "1F01E614BDAAC69B", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "71B3F48B5EE8B26E", item: "createaddition:copper_wire", type: "item", count: 8L },
+				{ id: "39D9600AB2B0FF57", item: "createaddition:connector", type: "item", count: 4L }
+			]
+			title: "Медный провод"
+			x: 15.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["75C6CFC22F58941F"]
+			description: ["Обратная сторона: электричество обратно во вращение."]
+			id: "5BA960FF5E6185DA"
+			rewards: [
+				{ id: "39B07929451EDF58", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "5AFE953B830671F9", item: "createaddition:electric_motor", type: "item" }
+			]
+			title: "Электромотор"
+			x: 15.75d
+			y: 1.50d
+		}
+		{
+			dependencies: ["348C64DA9A0738E0"]
+			description: ["Модульный аккумулятор Crafts & Additions хранит энергию для ночи."]
+			id: "799190F037AF8F54"
+			rewards: [
+				{ id: "769A804E04C407C4", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "33562C943B5176A3", item: "createaddition:capacitor", type: "item", count: 4L }
+			]
+			title: "Накопитель"
+			x: 17.50d
+			y: 0.00d
+		}
+		{
+			dependencies: ["75C6CFC22F58941F"]
+			description: ["Делает провода и прутья из слитков."]
+			id: "3326934BA934D969"
+			rewards: [
+				{ id: "39BBEF025B3E0945", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "3A4E8C4BF9309A8E", item: "createaddition:rolling_mill", type: "item" }
+			]
+			title: "Прокатный стан"
+			x: 15.75d
+			y: 3.00d
+		}
+	]
+	title: "Этап 1 — Начало промышленности"
+}

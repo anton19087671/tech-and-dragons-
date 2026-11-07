@@ -1,0 +1,237 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iu"
+	group: ""
+	icon: "industrialupgrade:macerator/macerator"
+	id: "1CE45E79515736A2"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3EBFDBBE87133552"]
+			description: ["Industrial Upgrade — духовный наследник IndustrialCraft 2: эпохи от примитивной до фотонной. Ветка необязательная, но очень глубокая. Сканер руд выдаётся при первом входе."]
+			id: "14860106898CE36B"
+			rewards: [
+				{ id: "7A553149E1060A27", type: "xp", xp: 50 }
+			]
+			tasks: [
+				{ id: "1C495E36BEB545E1", type: "checkmark" }
+			]
+			title: "Наследник IC2"
+			x: 0.00d
+			y: 0.00d
+		}
+		{
+			dependencies: ["14860106898CE36B"]
+			description: ["Первая эпоха: дробите руду молотом на наковальне."]
+			id: "50400E673D181A67"
+			rewards: [
+				{ id: "700053CF1AA80E51", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "72E4BAFE9707322B", item: "industrialupgrade:block_anvil/block_anvil", type: "item" }
+			]
+			title: "Примитивная наковальня"
+			x: 1.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["50400E673D181A67"]
+			description: ["Паровая эпоха — машины на пару до электричества."]
+			id: "57332411AB103194"
+			rewards: [
+				{ id: "14DD1C0389F65FA7", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "38E82B7EE4928AD8", item: "industrialupgrade:basemachine3/steamboiler", type: "item" }
+			]
+			title: "Паровой котёл"
+			x: 3.50d
+			y: 0.00d
+		}
+		{
+			dependencies: ["57332411AB103194"]
+			description: ["Удвоение руды на пару."]
+			id: "1CDED4578AE1B6C3"
+			rewards: [
+				{ id: "745A618DDFCBDD99", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "736ABD520D731968", item: "industrialupgrade:basemachine3/steam_macerator", type: "item" }
+			]
+			title: "Паровой дробитель"
+			x: 5.25d
+			y: -0.75d
+		}
+		{
+			dependencies: ["57332411AB103194"]
+			description: ["Электрическая эпоха начинается с генератора."]
+			id: "1E04E7380EBC9A17"
+			rewards: [
+				{ id: "7B21FB336FBEBA42", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "3A4CFCE3A767852D", item: "industrialupgrade:basemachine3/generator_iu", type: "item" }
+			]
+			title: "Генератор"
+			x: 5.25d
+			y: 0.75d
+		}
+		{
+			dependencies: ["1E04E7380EBC9A17"]
+			description: ["Классика IC2: электрический дробитель."]
+			id: "14F6688AE61AC534"
+			rewards: [
+				{ id: "5A43389AC23849C7", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "1817552BE6E5E0DF", item: "industrialupgrade:macerator/macerator", type: "item" }
+			]
+			title: "Дробитель"
+			x: 7.00d
+			y: -2.25d
+		}
+		{
+			dependencies: ["1E04E7380EBC9A17"]
+			description: ["Сжимает материалы в пластины и блоки."]
+			id: "3CAD35A339C7308F"
+			rewards: [
+				{ id: "5E31E20F1A0D56C5", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "3902D37510535D73", item: "industrialupgrade:compressor/compressor", type: "item" }
+			]
+			title: "Компрессор"
+			x: 7.00d
+			y: -0.75d
+		}
+		{
+			dependencies: ["1E04E7380EBC9A17"]
+			description: ["Многоразовая батарея для инструментов."]
+			id: "326B5AAE941338B6"
+			rewards: [
+				{ id: "5E725FE840CF568D", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "109B505091160ED0", item: "industrialupgrade:battery/re_battery", type: "item", count: 2L }
+			]
+			title: "Аккумулятор"
+			x: 7.00d
+			y: 0.75d
+		}
+		{
+			dependencies: ["1E04E7380EBC9A17"]
+			description: ["Тихая энергия от солнца."]
+			id: "76183B8139EE9FE7"
+			rewards: [
+				{ id: "5EBEA74E4788436C", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "3E60652D1EBD6826", item: "industrialupgrade:basemachine3/solar_iu", type: "item" }
+			]
+			title: "Солнечная панель"
+			x: 7.00d
+			y: 2.25d
+		}
+		{
+			dependencies: ["326B5AAE941338B6", "3CAD35A339C7308F"]
+			description: ["Ёмкий накопитель для брони и инструментов."]
+			id: "5AA86218872C705A"
+			rewards: [
+				{ id: "1A01D5B3BE10AC9B", type: "xp", xp: 250 }
+			]
+			tasks: [
+				{ id: "1B635EB230E65EDA", item: "industrialupgrade:battery/energy_crystal", type: "item" }
+			]
+			title: "Энергетический кристалл"
+			x: 8.75d
+			y: -0.75d
+		}
+		{
+			dependencies: ["5AA86218872C705A"]
+			description: ["Ещё больше энергии."]
+			id: "7E42D0432A24F97E"
+			rewards: [
+				{ id: "3859878C23B1E0A4", type: "xp", xp: 400 }
+			]
+			tasks: [
+				{ id: "3C532867E073E222", item: "industrialupgrade:battery/lapotron_crystal", type: "item" }
+			]
+			title: "Лазуротроновый кристалл"
+			x: 10.50d
+			y: -1.50d
+		}
+		{
+			dependencies: ["5AA86218872C705A"]
+			description: ["Полёт на энергии."]
+			id: "3E515969DC4080D2"
+			rewards: [
+				{ id: "5C13E7FC31A603EE", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "532B62122B033925", item: "industrialupgrade:armour/jetpack", type: "item" }
+			]
+			title: "Электроранец"
+			x: 10.50d
+			y: 0.00d
+		}
+		{
+			dependencies: ["5AA86218872C705A"]
+			description: ["Классическая нано-броня IC2."]
+			id: "7F86627C6054A94B"
+			rewards: [
+				{ id: "5D3B6AAAB164B855", type: "xp", xp: 600 }
+			]
+			tasks: [
+				{ id: "50231797A796F3CD", item: "industrialupgrade:armour/nano_chestplate", type: "item" }
+			]
+			title: "Наноброня"
+			x: 10.50d
+			y: 1.50d
+		}
+		{
+			dependencies: ["76183B8139EE9FE7"]
+			description: ["Энергия из недр."]
+			id: "377DAE58BA6EA259"
+			rewards: [
+				{ id: "10EB15DB8A3447D1", type: "xp", xp: 400 }
+			]
+			tasks: [
+				{ id: "50E4B070BE0268F7", item: "industrialupgrade:geothermalpump/geothermal_controller", type: "item" }
+			]
+			title: "Геотермальный генератор"
+			x: 8.75d
+			y: 0.75d
+		}
+		{
+			dependencies: ["7E42D0432A24F97E"]
+			description: ["Сканирует предметы для репликации."]
+			id: "5B5E6E3471839B64"
+			rewards: [
+				{ id: "36194B82685D9BCE", type: "xp", xp: 500 }
+			]
+			tasks: [
+				{ id: "55C772865E04A06C", item: "industrialupgrade:basemachine3/scanner_iu", type: "item" }
+			]
+			title: "Сканер"
+			x: 12.25d
+			y: -0.75d
+		}
+		{
+			dependencies: ["7F86627C6054A94B", "7E42D0432A24F97E"]
+			description: ["Легенда IC2 — квантовый нагрудник."]
+			id: "5ACEC1EDA129BC4C"
+			rewards: [
+				{ id: "5C0037DFDEA6307E", type: "xp", xp: 1500 }
+			]
+			tasks: [
+				{ id: "12F8B7EF32CD6BAD", item: "industrialupgrade:armour/quantum_chestplate", type: "item" }
+			]
+			title: "Квантовая броня"
+			x: 12.25d
+			y: 0.75d
+		}
+	]
+	title: "Industrial Upgrade"
+}

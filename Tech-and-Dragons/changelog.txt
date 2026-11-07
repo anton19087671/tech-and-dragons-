@@ -1,0 +1,22 @@
+TECH & DRAGONS — BALANCED EDITION · ИСТОРИЯ ИЗМЕНЕНИЙ
+
+v1.0 (07.11.2026) — первая версия
+
+Изменения относительно исходного ТЗ:
+- IndustrialCraft 2: Refactored НЕ включён. Это неофициальная декомпиляция
+  IC2 2.9.40 без лицензии, её нет на CurseForge/Modrinth, и автор сам указывает
+  несовместимость с Create. По правилу ТЗ («не устанавливать неподтверждённые
+  версии») заменён на Industrial Upgrade 3.4.0.11 — официальный релиз на
+  Modrinth, лицензия GPL-3.0, «духовный наследник IC2». Проверен с остальными модами.
+- Убран Powah! — слишком дешёвая энергия ломала прогрессию.
+- Убран Pipez — трубы уже есть в Mekanism, LaserIO и Industrial Upgrade.
+- Добавлены: Almost Unified (объединение руд), Patchouli (книги-гайды
+  Industrial Foregoing и LaserIO), KubeJS + Rhino (баланс), FTB Library.
+- Добавлен блок зачарования: Enchanting Infuser, Easy Anvils, Enchantment Transfer.
+- Отклонён Easy Disenchanting: его библиотека TxniLib тянет полный порт
+  Fabric API (60+ модулей) и вызывала ошибку инъекции в торговлю жителей.
+- Extreme Reactors, Thermal, Mekanism: генерация олова и свинца Mekanism
+  выключена (их даёт Thermal).
+- Баланс (KubeJS): Draconic после космоса (остриум, калорит), реакторы и Flux
+  за схемами Mekanism.
+- 207 квестов FTB Quests в 7 главах на русском.

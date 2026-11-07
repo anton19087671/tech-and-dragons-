@@ -1,0 +1,185 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intro"
+	group: ""
+	icon: "ftbquests:book"
+	id: "3DFD73D042BE942D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: []
+			description: ["Добро пожаловать! Эта книга ведёт вас от первых шестерёнок до дракониевой брони. Квесты открываются по порядку, награды забирайте кнопкой справа."]
+			id: "5EB9DBDA5FC46296"
+			rewards: [
+				{ id: "3103D0A02D6C9EDA", type: "xp", xp: 50 },
+				{ id: "71A9D8F186576C7F", item: "minecraft:bread", type: "item", count: 8 }
+			]
+			tasks: [
+				{ id: "73D5DBBD5A38023E", type: "checkmark" }
+			]
+			title: "Tech & Dragons"
+			x: 0.00d
+			y: 0.00d
+		}
+		{
+			dependencies: ["5EB9DBDA5FC46296"]
+			description: ["Добудьте брёвна любого дерева — с этого начинается всё."]
+			id: "3B29A79B80641962"
+			rewards: [
+				{ id: "7AA691BCCFAC1163", type: "xp", xp: 20 }
+			]
+			tasks: [
+				{ id: "1B44C3FE51657D25", item: "minecraft:oak_log", type: "item", count: 16L }
+			]
+			title: "Первое дерево"
+			x: 1.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["3B29A79B80641962"]
+			description: ["Сделайте верстак. Рецепты любых предметов смотрите в JEI справа: клавиша R — рецепт, U — где используется."]
+			id: "332A9314CF78F3EE"
+			rewards: [
+				{ id: "5FDC722CD312D0B0", type: "xp", xp: 20 }
+			]
+			tasks: [
+				{ id: "701EF9A6876837F6", item: "minecraft:crafting_table", type: "item" }
+			]
+			title: "Верстак"
+			x: 3.50d
+			y: -0.75d
+		}
+		{
+			dependencies: ["332A9314CF78F3EE"]
+			description: ["Каменная кирка — минимум, чтобы добывать руду."]
+			id: "74D30EBC7E674D7E"
+			rewards: [
+				{ id: "301154FE173FE689", type: "xp", xp: 30 }
+			]
+			tasks: [
+				{ id: "10CFF2DD8FF503A3", item: "minecraft:stone_pickaxe", type: "item" }
+			]
+			title: "Каменный век"
+			x: 5.25d
+			y: 0.00d
+		}
+		{
+			dependencies: ["74D30EBC7E674D7E"]
+			description: ["Найдите и переплавьте железо. Высоту руд показывает Just Enough Resources во вкладке JEI."]
+			id: "3EBFDBBE87133552"
+			rewards: [
+				{ id: "7DB6962FD7CFD564", type: "xp", xp: 50 },
+				{ id: "505D1810793B77F3", item: "minecraft:torch", type: "item", count: 32 }
+			]
+			tasks: [
+				{ id: "5E6EC839B279EF57", item: "minecraft:iron_ingot", type: "item", count: 16L }
+			]
+			title: "Железо"
+			x: 7.00d
+			y: -0.75d
+		}
+		{
+			dependencies: ["74D30EBC7E674D7E"]
+			description: ["Ванильная медь пригодится Create и почти всем техно-модам."]
+			id: "5BE8E8AED836E395"
+			rewards: [
+				{ id: "74CC95017379441E", type: "xp", xp: 40 }
+			]
+			tasks: [
+				{ id: "7C59D49374963D3B", item: "minecraft:copper_ingot", type: "item", count: 16L }
+			]
+			title: "Медь"
+			x: 7.00d
+			y: 0.75d
+		}
+		{
+			dependencies: ["3EBFDBBE87133552"]
+			description: ["Рюкзак из Sophisticated Backpacks — первое спасение от вечно полного инвентаря."]
+			id: "7CB742D0F29504A6"
+			rewards: [
+				{ id: "7244F11417883E5D", type: "xp", xp: 50 },
+				{ id: "7380642CACA682DC", item: "sophisticatedbackpacks:pickup_upgrade", type: "item" }
+			]
+			tasks: [
+				{ id: "7FDCAB482C88E7F4", item: "sophisticatedbackpacks:backpack", type: "item" }
+			]
+			title: "Рюкзак"
+			x: 8.75d
+			y: -3.00d
+		}
+		{
+			dependencies: ["3EBFDBBE87133552"]
+			description: ["Waystone — телепорт между точками. Поставьте у базы, чтобы быстро возвращаться из экспедиций."]
+			id: "3798E9578E6922F0"
+			rewards: [
+				{ id: "79BB79F13A2E57DF", type: "xp", xp: 80 },
+				{ id: "1932CA9B8352EF9B", item: "waystones:warp_scroll", type: "item", count: 2 }
+			]
+			tasks: [
+				{ id: "17693B1E94DB0999", item: "waystones:waystone", type: "item" }
+			]
+			title: "Путевой камень"
+			x: 8.75d
+			y: -1.50d
+		}
+		{
+			dependencies: ["3EBFDBBE87133552"]
+			description: ["Nature's Compass ищет нужный биом — удобно для поиска ресурсов Terralith и BOP."]
+			id: "15F130BDD33FBC6C"
+			rewards: [
+				{ id: "1E60A339BC129F4B", type: "xp", xp: 50 }
+			]
+			tasks: [
+				{ id: "7F8A8CA4954E9A8B", item: "naturescompass:naturescompass", type: "item" }
+			]
+			title: "Компас природы"
+			x: 8.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["3EBFDBBE87133552"]
+			description: ["Trash Can уничтожает лишнее. Пригодится, когда фермы начнут переполнять сундуки."]
+			id: "7ED8B41238FB2BBC"
+			rewards: [
+				{ id: "3C51C1F3FE70664B", type: "xp", xp: 30 }
+			]
+			tasks: [
+				{ id: "796DBB9E2C18B9E3", item: "trashcans:item_trash_can", type: "item" }
+			]
+			title: "Мусорка"
+			x: 8.75d
+			y: 1.50d
+		}
+		{
+			dependencies: ["3EBFDBBE87133552"]
+			description: ["Construction Wand ставит сразу много блоков — стены базы строятся в разы быстрее."]
+			id: "101ACAFAE3D18E77"
+			rewards: [
+				{ id: "360927DFD35CA0BF", type: "xp", xp: 40 }
+			]
+			tasks: [
+				{ id: "75DECC1ECD850AB0", item: "constructionwand:iron_wand", type: "item" }
+			]
+			title: "Строительный жезл"
+			x: 8.75d
+			y: 3.00d
+		}
+		{
+			dependencies: ["3B29A79B80641962"]
+			description: ["Кровать сохраняет точку возрождения. Ночи в этой сборке опаснее обычного."]
+			id: "5985DE0C89B9DB93"
+			rewards: [
+				{ id: "1BE1CC16A3986CC2", type: "xp", xp: 30 }
+			]
+			tasks: [
+				{ id: "148B259BD8805693", item: "minecraft:white_bed", type: "item" }
+			]
+			title: "Безопасная ночь"
+			x: 3.50d
+			y: 0.75d
+		}
+	]
+	title: "Добро пожаловать"
+}

@@ -1,0 +1,769 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stage2"
+	group: ""
+	icon: "mekanism:metallurgic_infuser"
+	id: "5FED1E8EF4835B9F"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["75C6CFC22F58941F"]
+			description: ["Осмий — главный металл Mekanism. Руда встречается на любой высоте."]
+			id: "5B5A538FF78CA5F1"
+			rewards: [
+				{ id: "1D6A1014C9DC8AF9", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "19B7A60744D61F42", item: "mekanism:ingot_osmium", type: "item", count: 16L }
+			]
+			title: "Осмий"
+			x: 0.00d
+			y: -3.75d
+		}
+		{
+			dependencies: ["5B5A538FF78CA5F1"]
+			description: ["Сердце Mekanism: делает сплавы и схемы."]
+			id: "55585052E42D9566"
+			rewards: [
+				{ id: "1605B3B5256CB0E9", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "1DFC2BD4AC00C9C5", item: "mekanism:metallurgic_infuser", type: "item" }
+			]
+			title: "Металлургический наполнитель"
+			x: 1.75d
+			y: -1.50d
+		}
+		{
+			dependencies: ["55585052E42D9566"]
+			description: ["Сталь из железа и угля в наполнителе. Нужна почти везде."]
+			id: "5C78BECDCF9BA4CB"
+			rewards: [
+				{ id: "5F3DB4B41F95B854", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "176B42A70A798D69", item: "mekanism:ingot_steel", type: "item", count: 16L }
+			]
+			title: "Сталь"
+			x: 3.50d
+			y: -6.75d
+		}
+		{
+			dependencies: ["55585052E42D9566"]
+			description: ["Схемы — валюта Mekanism и ключ к реакторам и космосу."]
+			id: "59467374BAD3D9AB"
+			rewards: [
+				{ id: "5AE4BE1081DFCBB6", type: "xp", xp: 100 },
+				{ id: "1ABB8F5C85123C50", item: "mekanism:basic_control_circuit", type: "item", count: 2 }
+			]
+			tasks: [
+				{ id: "33D1DD304681B644", item: "mekanism:basic_control_circuit", type: "item", count: 4L }
+			]
+			title: "Базовая схема"
+			x: 3.50d
+			y: -5.25d
+		}
+		{
+			dependencies: ["55585052E42D9566"]
+			description: ["Медь + красная пыль. Нужен для машин второго уровня."]
+			id: "5CF03E6F89D8A688"
+			rewards: [
+				{ id: "598EEFB77E14AAC8", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "378BC9D3918E9361", item: "mekanism:alloy_infused", type: "item", count: 8L }
+			]
+			title: "Насыщенный сплав"
+			x: 3.50d
+			y: -3.75d
+		}
+		{
+			dependencies: ["59467374BAD3D9AB", "5C78BECDCF9BA4CB"]
+			description: ["Удваивает руду: 1 руда → 2 пыли."]
+			id: "7C80C4D085FCC8FF"
+			rewards: [
+				{ id: "1F71199C2537E8A6", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "3BF7EA15108982C4", item: "mekanism:enrichment_chamber", type: "item" }
+			]
+			title: "Обогатительная камера"
+			x: 5.25d
+			y: -8.25d
+		}
+		{
+			dependencies: ["59467374BAD3D9AB"]
+			description: ["Электрическая печь Mekanism — быстрая и без топлива."]
+			id: "76EEEDF59F9D43E6"
+			rewards: [
+				{ id: "75A68393AAA71FC2", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "395BF1C978338888", item: "mekanism:energized_smelter", type: "item" }
+			]
+			title: "Энергетическая плавильня"
+			x: 5.25d
+			y: -6.75d
+		}
+		{
+			dependencies: ["59467374BAD3D9AB"]
+			description: ["Дробит слитки и камни в пыль."]
+			id: "368A07CE4A117E2F"
+			rewards: [
+				{ id: "33ABA0520CE05C2E", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "1C4AA859DAE60023", item: "mekanism:crusher", type: "item" }
+			]
+			title: "Дробитчик"
+			x: 5.25d
+			y: -5.25d
+		}
+		{
+			dependencies: ["59467374BAD3D9AB"]
+			description: ["Кабели Mekanism передают любую энергию FE."]
+			id: "1149E72EF9933893"
+			rewards: [
+				{ id: "58FCB7035EE311A4", type: "xp", xp: 60 }
+			]
+			tasks: [
+				{ id: "1385663ECC29083C", item: "mekanism:basic_universal_cable", type: "item", count: 16L }
+			]
+			title: "Универсальный кабель"
+			x: 5.25d
+			y: -3.75d
+		}
+		{
+			dependencies: ["59467374BAD3D9AB", "5C78BECDCF9BA4CB"]
+			description: ["Хранилище энергии. Улучшайте его по мере роста базы."]
+			id: "33B4D307927B7434"
+			rewards: [
+				{ id: "52B7167B52D6B1EA", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "35B3957CEF8E75D7", item: "mekanism:basic_energy_cube", type: "item" }
+			]
+			title: "Энергокуб"
+			x: 5.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["59467374BAD3D9AB"]
+			description: ["Генератор на лаве и топливе — стабильная энергия для старта."]
+			id: "3DA40FD6A9C5A8AA"
+			rewards: [
+				{ id: "186F73F03406C9ED", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "1DEE1BF686811128", item: "mekanismgenerators:heat_generator", type: "item" }
+			]
+			title: "Тепловой генератор"
+			x: 5.25d
+			y: -0.75d
+		}
+		{
+			dependencies: ["59467374BAD3D9AB"]
+			description: ["Бесплатная энергия днём."]
+			id: "55B8754B139C3E09"
+			rewards: [
+				{ id: "110340D830FB6F09", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "3EF7FCADC186EF1F", item: "mekanismgenerators:solar_generator", type: "item", count: 2L }
+			]
+			title: "Солнечный генератор"
+			x: 5.25d
+			y: 0.75d
+		}
+		{
+			dependencies: ["59467374BAD3D9AB", "5CF03E6F89D8A688"]
+			description: ["Открывает генераторы второго уровня и реакторы Extreme Reactors."]
+			id: "739F154BCEBCB55E"
+			rewards: [
+				{ id: "5F6F2E42C8117DA2", type: "xp", xp: 150 },
+				{ id: "5FD078F593B3F71A", item: "mekanism:alloy_infused", type: "item", count: 4 }
+			]
+			tasks: [
+				{ id: "3653F1757AF42D8D", item: "mekanism:advanced_control_circuit", type: "item", count: 4L }
+			]
+			title: "Продвинутая схема"
+			x: 5.25d
+			y: 2.25d
+		}
+		{
+			dependencies: ["7C80C4D085FCC8FF", "739F154BCEBCB55E"]
+			description: ["Утроение руды: 1 руда → 3 комка. Нужен кислород."]
+			id: "534E8FAEDC5B525F"
+			rewards: [
+				{ id: "50E86E2AB96603F6", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "5F47626F22B2D856", item: "mekanism:purification_chamber", type: "item" }
+			]
+			title: "Камера очистки"
+			x: 7.00d
+			y: -6.75d
+		}
+		{
+			dependencies: ["739F154BCEBCB55E"]
+			description: ["Делит воду на водород и кислород — для очистки и топлива."]
+			id: "7E7A85F6D5EC7B91"
+			rewards: [
+				{ id: "5DCA6D80FDA04C8E", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "74CD87990E4B5843", item: "mekanism:electrolytic_separator", type: "item" }
+			]
+			title: "Электролизный сепаратор"
+			x: 7.00d
+			y: -5.25d
+		}
+		{
+			dependencies: ["7E7A85F6D5EC7B91"]
+			description: ["Сжигает водород или этилен — первая серьёзная электростанция."]
+			id: "30953EF13A45F597"
+			rewards: [
+				{ id: "55990698344E03C7", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "75FE0987F1B913EE", item: "mekanismgenerators:gas_burning_generator", type: "item" }
+			]
+			title: "Газовый генератор"
+			x: 8.75d
+			y: -3.75d
+		}
+		{
+			dependencies: ["739F154BCEBCB55E"]
+			description: ["Работает лучше всего высоко в горах."]
+			id: "51086CC0768816EE"
+			rewards: [
+				{ id: "1E52C0F5E32369D8", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "1F6E1C62911647E8", item: "mekanismgenerators:wind_generator", type: "item" }
+			]
+			title: "Ветрогенератор"
+			x: 7.00d
+			y: -3.75d
+		}
+		{
+			dependencies: ["739F154BCEBCB55E"]
+			description: ["Алмаз в наполнителе. Нужен для элитных схем."]
+			id: "78973CE04E66F766"
+			rewards: [
+				{ id: "3FBC3B5B4D6631B4", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "5357E27EE9C6E680", item: "mekanism:alloy_reinforced", type: "item", count: 8L }
+			]
+			title: "Укреплённый сплав"
+			x: 7.00d
+			y: -2.25d
+		}
+		{
+			dependencies: ["78973CE04E66F766"]
+			description: ["Открывает Flux Networks и укреплённые реакторы. Ключ к этапу 4!"]
+			id: "78D44CCC69F2CBC6"
+			rewards: [
+				{ id: "5D07DD716DF4345F", type: "xp", xp: 300 },
+				{ id: "57978ADDF2BC05D1", item: "mekanism:alloy_reinforced", type: "item", count: 4 }
+			]
+			tasks: [
+				{ id: "38DF82A0EB5C662C", item: "mekanism:elite_control_circuit", type: "item", count: 4L }
+			]
+			title: "Элитная схема"
+			x: 8.75d
+			y: -2.25d
+		}
+		{
+			dependencies: ["534E8FAEDC5B525F", "78D44CCC69F2CBC6"]
+			description: ["Учетверение руды: 1 руда → 4 осколка."]
+			id: "5A4F95CDF3125AF3"
+			rewards: [
+				{ id: "7BBE6E81D45D4719", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "34FCB74FC62363A4", item: "mekanism:chemical_injection_chamber", type: "item" }
+			]
+			title: "Камера химических инъекций"
+			x: 10.50d
+			y: -0.75d
+		}
+		{
+			dependencies: ["7E7A85F6D5EC7B91"]
+			description: ["Летает на водороде. Удобно для строительства."]
+			id: "1F91B3C1B68C96A5"
+			rewards: [
+				{ id: "592C19EECCAD4094", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "76397DE85F81668D", item: "mekanism:jetpack", type: "item" }
+			]
+			title: "Реактивный ранец"
+			x: 8.75d
+			y: -0.75d
+		}
+		{
+			dependencies: ["739F154BCEBCB55E"]
+			description: ["Универсальный инструмент: копает, рубит, ломает жилами."]
+			id: "5764EA338661148B"
+			rewards: [
+				{ id: "1D4226BF49CBADF6", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "30D93E074ACC362F", item: "mekanism:atomic_disassembler", type: "item" }
+			]
+			title: "Атомный дезинтегратор"
+			x: 7.00d
+			y: -0.75d
+		}
+		{
+			dependencies: ["5C78BECDCF9BA4CB"]
+			description: ["Броня из Mekanism Tools — заметно лучше железной."]
+			id: "16732C73D432A62E"
+			rewards: [
+				{ id: "7F83F191A6E276F8", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "31B282CBEEC14269", item: "mekanismtools:steel_chestplate", type: "item" }
+			]
+			title: "Стальная броня"
+			x: 5.25d
+			y: 3.75d
+		}
+		{
+			dependencies: ["75C6CFC22F58941F"]
+			description: ["Основа всех машин Thermal Expansion."]
+			id: "59888BBC2DB51B31"
+			rewards: [
+				{ id: "13469798AF6E1EEA", type: "xp", xp: 80 }
+			]
+			tasks: [
+				{ id: "1C2512B664EB6070", item: "thermal:machine_frame", type: "item" }
+			]
+			title: "Каркас машины Thermal"
+			x: 0.00d
+			y: -2.25d
+		}
+		{
+			dependencies: ["59888BBC2DB51B31"]
+			description: ["Нужна для машин и динамо Thermal."]
+			id: "52A1A262CA3C2879"
+			rewards: [
+				{ id: "3550232259E1339A", type: "xp", xp: 60 }
+			]
+			tasks: [
+				{ id: "3809437688334D5B", item: "thermal:rf_coil", type: "item", count: 4L }
+			]
+			title: "Катушка RF"
+			x: 1.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["52A1A262CA3C2879"]
+			description: ["Простейший генератор Thermal на твёрдом топливе."]
+			id: "515E0D8B1DF12EBF"
+			rewards: [
+				{ id: "55CDE0D2696ECD2D", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "5D10A1BE13DDE26D", item: "thermal:dynamo_stirling", type: "item" }
+			]
+			title: "Динамо Стирлинга"
+			x: 3.50d
+			y: -2.25d
+		}
+		{
+			dependencies: ["52A1A262CA3C2879"]
+			description: ["Измельчает руду в пыль с побочными продуктами."]
+			id: "7886BA537BB9AE38"
+			rewards: [
+				{ id: "52FB02ED1AD49171", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "5992BA5E3E77CC36", item: "thermal:machine_pulverizer", type: "item" }
+			]
+			title: "Измельчитель"
+			x: 3.50d
+			y: -0.75d
+		}
+		{
+			dependencies: ["52A1A262CA3C2879"]
+			description: ["Сплавляет металлы: бронза, инвар, электрум и другие."]
+			id: "71EAD9297C283E7C"
+			rewards: [
+				{ id: "359903E1797C0AE0", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "50ECDC9D624FF0A9", item: "thermal:machine_smelter", type: "item" }
+			]
+			title: "Индукционная плавильня"
+			x: 3.50d
+			y: 0.75d
+		}
+		{
+			dependencies: ["71EAD9297C283E7C"]
+			description: ["Электрум и инвар — ключевые сплавы для улучшений."]
+			id: "136B0BC51787B1AD"
+			rewards: [
+				{ id: "7514AF199A488D6A", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "51D723208D642A3C", item: "thermal:electrum_ingot", type: "item", count: 8L },
+				{ id: "53CF4CA67A20C6B4", item: "thermal:invar_ingot", type: "item", count: 8L }
+			]
+			title: "Сплавы Thermal"
+			x: 5.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["52A1A262CA3C2879"]
+			description: ["Выращивает растения в машине — бесконечная ферма."]
+			id: "32D77C5F09B51365"
+			rewards: [
+				{ id: "1CB71C902D9C8CD0", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "39084379FFDF250D", item: "thermal:machine_insolator", type: "item" }
+			]
+			title: "Фитогенный инсолятор"
+			x: 3.50d
+			y: 2.25d
+		}
+		{
+			dependencies: ["136B0BC51787B1AD"]
+			description: ["Хранилище энергии с настройкой сторон."]
+			id: "547D3F098399CE83"
+			rewards: [
+				{ id: "54767314F015AA54", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "371F82A3D82D5D1B", item: "thermal:energy_cell", type: "item" }
+			]
+			title: "Энергоячейка Thermal"
+			x: 7.00d
+			y: 0.75d
+		}
+		{
+			dependencies: ["515E0D8B1DF12EBF", "136B0BC51787B1AD"]
+			description: ["Энергия из лавы — много и стабильно."]
+			id: "3E6A829F92BFFE2D"
+			rewards: [
+				{ id: "362C40149656172E", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "39D2EC0893E2916C", item: "thermal:dynamo_magmatic", type: "item" }
+			]
+			title: "Магматическое динамо"
+			x: 7.00d
+			y: 2.25d
+		}
+		{
+			dependencies: ["75C6CFC22F58941F"]
+			description: ["Industrial Foregoing начинается с латекса из деревьев и пластика."]
+			id: "38CEF00F54657240"
+			rewards: [
+				{ id: "7F7F2F1BC434F64D", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "3C1FF7E8388603DA", item: "industrialforegoing:dryrubber", type: "item", count: 8L }
+			]
+			title: "Латекс и пластик"
+			x: 0.00d
+			y: -0.75d
+		}
+		{
+			dependencies: ["38CEF00F54657240"]
+			description: ["Основа машин Industrial Foregoing."]
+			id: "5496383563C302CD"
+			rewards: [
+				{ id: "3B366849F91260CD", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "7A6E42FF33E478A9", item: "industrialforegoing:machine_frame_simple", type: "item" }
+			]
+			title: "Простой каркас IF"
+			x: 1.75d
+			y: 1.50d
+		}
+		{
+			dependencies: ["5496383563C302CD"]
+			description: ["Перерабатывает урожай в биотопливо."]
+			id: "741B54ED963DBBE0"
+			rewards: [
+				{ id: "330A004AE9006382", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "798DE2823F543F4C", item: "industrialforegoing:bioreactor", type: "item" }
+			]
+			title: "Биореактор"
+			x: 3.50d
+			y: 3.75d
+		}
+		{
+			dependencies: ["741B54ED963DBBE0"]
+			description: ["Полностью автоматическая ферма энергии вместе с биореактором."]
+			id: "32A9AC13C3DF8C5F"
+			rewards: [
+				{ id: "142BFBF22606272C", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "3CECFDFF12717F43", item: "industrialforegoing:biofuel_generator", type: "item" }
+			]
+			title: "Генератор на биотопливе"
+			x: 5.25d
+			y: 6.75d
+		}
+		{
+			dependencies: ["5496383563C302CD"]
+			description: ["Автоматическое выращивание растений."]
+			id: "7120A7D916FF1076"
+			rewards: [
+				{ id: "1A5CA2879275D33C", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "1FDBF0EC12A15319", item: "industrialforegoing:hydroponic_bed", type: "item" }
+			]
+			title: "Гидропонная грядка"
+			x: 3.50d
+			y: 5.25d
+		}
+		{
+			dependencies: ["5496383563C302CD"]
+			description: ["Автоматическая ферма опыта и лута с мобов."]
+			id: "774EB07FA14EB282"
+			rewards: [
+				{ id: "3FB2A36F9FFB6C7F", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "7CC4D6710066FFDA", item: "industrialforegoing:mob_crusher", type: "item" }
+			]
+			title: "Измельчитель мобов"
+			x: 3.50d
+			y: 6.75d
+		}
+		{
+			dependencies: ["5496383563C302CD", "739F154BCEBCB55E"]
+			description: ["Открывает лазерный бур и улучшения."]
+			id: "5FB9829EF4DCAF0E"
+			rewards: [
+				{ id: "18D91B59100B579F", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "5281AAAC0B0B8D23", item: "industrialforegoing:machine_frame_advanced", type: "item" }
+			]
+			title: "Продвинутый каркас IF"
+			x: 7.00d
+			y: 3.75d
+		}
+		{
+			dependencies: ["5FB9829EF4DCAF0E"]
+			description: ["Добывает руду из ничего. Требует много энергии — ставьте рядом с электростанцией."]
+			id: "11AA5B7EA219E43D"
+			rewards: [
+				{ id: "1C1F03B775795277", type: "xp", xp: 400 }
+			]
+			tasks: [
+				{ id: "3000B0BF7FA6B730", item: "industrialforegoing:laser_drill", type: "item" },
+				{ id: "5EC62E440F8427F5", item: "industrialforegoing:ore_laser_base", type: "item" }
+			]
+			title: "Лазерный бур"
+			x: 8.75d
+			y: 0.75d
+		}
+		{
+			dependencies: ["5FB9829EF4DCAF0E"]
+			description: ["Black Hole Unit хранит миллионы предметов одного типа."]
+			id: "77DE96476117904F"
+			rewards: [
+				{ id: "78B795DF77C9A048", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "3B16B0255ED03032", item: "industrialforegoing:common_black_hole_unit", type: "item" }
+			]
+			title: "Чёрная дыра"
+			x: 8.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["5C78BECDCF9BA4CB"]
+			description: ["Кристаллы истинного кварца — начало Applied Energistics 2. Ищите метеориты компасом метеоритов."]
+			id: "18D353BE3A6E3C2E"
+			rewards: [
+				{ id: "5501C1E0EF5A26A5", type: "xp", xp: 100 },
+				{ id: "7D20C01E8DA6E863", item: "ae2:meteorite_compass", type: "item" }
+			]
+			tasks: [
+				{ id: "531C4665DD158CC5", item: "ae2:certus_quartz_crystal", type: "item", count: 16L }
+			]
+			title: "Истинный кварц"
+			x: 5.25d
+			y: 8.25d
+		}
+		{
+			dependencies: ["18D353BE3A6E3C2E"]
+			description: ["Печатает процессоры AE2 по прессам из метеоритов."]
+			id: "3A3C3947BDB24EFC"
+			rewards: [
+				{ id: "1094321CC7916B9A", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "125F1CBC5405FA10", item: "ae2:inscriber", type: "item" }
+			]
+			title: "Высекатель"
+			x: 7.00d
+			y: 5.25d
+		}
+		{
+			dependencies: ["3A3C3947BDB24EFC"]
+			description: ["Три вида процессоров открывают всю сеть МЭ."]
+			id: "7035598F8FB80449"
+			rewards: [
+				{ id: "1E8339E1B942B95B", type: "xp", xp: 250 }
+			]
+			tasks: [
+				{ id: "7A2CE10D2C29D06A", item: "ae2:logic_processor", type: "item", count: 4L },
+				{ id: "3E6B7CA2E7963A5A", item: "ae2:calculation_processor", type: "item", count: 4L },
+				{ id: "3151C2D4C04C2CEF", item: "ae2:engineering_processor", type: "item", count: 4L }
+			]
+			title: "Процессоры"
+			x: 8.75d
+			y: 3.75d
+		}
+		{
+			dependencies: ["7035598F8FB80449"]
+			description: ["Контроллер, привод и терминал — цифровое хранилище для всей базы."]
+			id: "1C94D12BBBFF0137"
+			rewards: [
+				{ id: "1DFF6B40259E884B", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "38D19150035B7C7C", item: "ae2:controller", type: "item" },
+				{ id: "5E89B7805F145B17", item: "ae2:drive", type: "item" },
+				{ id: "7BAC34F9E64BBE1A", item: "ae2:terminal", type: "item" }
+			]
+			title: "Сеть МЭ"
+			x: 10.50d
+			y: 0.75d
+		}
+		{
+			dependencies: ["1C94D12BBBFF0137"]
+			description: ["4k — хороший старт. Чем больше ячеек, тем больше места."]
+			id: "36D939B59FF6C13F"
+			rewards: [
+				{ id: "761F57513B11EEA0", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "118E8252F884EE65", item: "ae2:item_storage_cell_4k", type: "item", count: 2L }
+			]
+			title: "Ячейка хранения"
+			x: 12.25d
+			y: 0.00d
+		}
+		{
+			dependencies: ["36D939B59FF6C13F"]
+			description: ["Молекулярный сборщик и поставщик шаблонов крафтят по запросу."]
+			id: "71988658E6B68844"
+			rewards: [
+				{ id: "13DCBCDEFD2F93B8", type: "xp", xp: 400 }
+			]
+			tasks: [
+				{ id: "57734F7FC413A5F0", item: "ae2:molecular_assembler", type: "item", count: 2L },
+				{ id: "3F965C5EA337DA77", item: "ae2:pattern_provider", type: "item" },
+				{ id: "7D995F07395CB93B", item: "ae2:crafting_unit", type: "item" }
+			]
+			title: "Автокрафт"
+			x: 14.00d
+			y: -0.75d
+		}
+		{
+			dependencies: ["71988658E6B68844"]
+			description: ["ExtendedAE: поставщик шаблонов с большим числом слотов."]
+			id: "3AE9EC10EF4FBAB3"
+			rewards: [
+				{ id: "3DDFAA65CB7DB566", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "707071867A7940C6", item: "expatternprovider:ex_pattern_provider", type: "item" }
+			]
+			title: "Расширенный поставщик"
+			x: 15.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["36D939B59FF6C13F"]
+			description: ["AE2 Things: диски хранят предметы с NBT без потерь."]
+			id: "7E0A509B615D9581"
+			rewards: [
+				{ id: "55A03570585EB0E8", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "128E869A16E1358F", item: "ae2things:disk_drive_4k", type: "item" }
+			]
+			title: "Дисковые накопители"
+			x: 14.00d
+			y: 0.75d
+		}
+		{
+			dependencies: ["74D8E77E9BA22C4C"]
+			description: ["Functional Storage — компактное хранение на старте и середине игры."]
+			id: "5E0549364BA9D80E"
+			rewards: [
+				{ id: "7137ACB543145709", type: "xp", xp: 120 }
+			]
+			tasks: [
+				{ id: "79B633AA77AAA0DE", item: "functionalstorage:oak_1", type: "item", count: 4L },
+				{ id: "5BDF0EF90D6604B3", item: "functionalstorage:storage_controller", type: "item" }
+			]
+			title: "Ящики"
+			x: 0.00d
+			y: 0.75d
+		}
+		{
+			dependencies: ["74D8E77E9BA22C4C"]
+			description: ["Sophisticated Storage: сундуки с улучшениями сортировки и сжатия."]
+			id: "5F19F3934B1E9669"
+			rewards: [
+				{ id: "70D1AA00A6BC73FC", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "1CEE0F1B38142D0F", item: "sophisticatedstorage:iron_chest", type: "item" }
+			]
+			title: "Улучшаемый сундук"
+			x: 0.00d
+			y: 2.25d
+		}
+		{
+			dependencies: ["739F154BCEBCB55E"]
+			description: ["LaserIO двигает предметы, жидкости и энергию лучами между узлами."]
+			id: "511F9F303FE93B2E"
+			rewards: [
+				{ id: "3C1035EBD89742F0", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "15975FB5DBDA3524", item: "laserio:laser_node", type: "item", count: 2L },
+				{ id: "771C967399F71BE3", item: "laserio:card_item", type: "item", count: 2L }
+			]
+			title: "Лазерная логистика"
+			x: 7.00d
+			y: 6.75d
+		}
+		{
+			dependencies: ["74D8E77E9BA22C4C"]
+			description: ["CC: Tweaked — программируемые компьютеры на Lua. Для желающих автоматизировать всё."]
+			id: "3118CA3BEA019EE2"
+			rewards: [
+				{ id: "3557A9841CA4C8C4", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "38136CF2DFB912F7", item: "computercraft:computer_normal", type: "item" }
+			]
+			title: "Компьютер"
+			x: 0.00d
+			y: 3.75d
+		}
+	]
+	title: "Этап 2 — Индустриальная революция"
+}

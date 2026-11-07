@@ -1,0 +1,327 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stage5"
+	group: ""
+	icon: "draconicevolution:draconium_core"
+	id: "35A44257E2F664CA"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1039483974BFAF9B"]
+			description: ["Драконий встречается глубоко в Верхнем мире, в Незере и Крае. Лучше всего — в Крае."]
+			id: "57BEE51D101AB836"
+			rewards: [
+				{ id: "1D83BCE25FB89C21", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "75FEFB1DE19E38C8", item: "draconicevolution:draconium_dust", type: "item", count: 8L }
+			]
+			title: "Руда дракония"
+			x: 0.00d
+			y: -0.75d
+		}
+		{
+			dependencies: ["57BEE51D101AB836"]
+			description: ["Основной металл Draconic Evolution."]
+			id: "788A1B9AC5FAD923"
+			rewards: [
+				{ id: "16DDB1123D42B7EA", type: "xp", xp: 400 }
+			]
+			tasks: [
+				{ id: "53BE2F58DD6D2C24", item: "draconicevolution:draconium_ingot", type: "item", count: 16L }
+			]
+			title: "Слиток дракония"
+			x: 1.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["788A1B9AC5FAD923", "7E2CD1216DAC0215"]
+			description: ["Ядро теперь требует остриум с Марса."]
+			id: "11F32A7C70AC0790"
+			rewards: [
+				{ id: "37D8D7B554D2197D", type: "xp", xp: 600 }
+			]
+			tasks: [
+				{ id: "5EE335DECA043C2F", item: "draconicevolution:draconium_core", type: "item", count: 4L }
+			]
+			title: "Ядро дракония"
+			x: 3.50d
+			y: 0.00d
+		}
+		{
+			dependencies: ["11F32A7C70AC0790"]
+			description: ["Простой генератор с хорошей отдачей."]
+			id: "1E000C296ABDC033"
+			rewards: [
+				{ id: "5D6415C22C58756F", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "3F3B23B843A2CB3C", item: "draconicevolution:generator", type: "item" }
+			]
+			title: "Генератор Draconic"
+			x: 5.25d
+			y: -3.00d
+		}
+		{
+			dependencies: ["11F32A7C70AC0790"]
+			description: ["Автоматически убивает мобов в радиусе."]
+			id: "758CB99235745CE8"
+			rewards: [
+				{ id: "1436634F8A1C4EF8", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "3D4B1CA104C9D2DC", item: "draconicevolution:grinder", type: "item" }
+			]
+			title: "Мясорубка"
+			x: 5.25d
+			y: -1.50d
+		}
+		{
+			dependencies: ["11F32A7C70AC0790"]
+			description: ["Телепортация в запомненные точки."]
+			id: "58B429B5BFC66C52"
+			rewards: [
+				{ id: "377022E5F7B2B5FF", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "70DBDA12C93B92D0", item: "draconicevolution:dislocator", type: "item" }
+			]
+			title: "Дислокатор"
+			x: 5.25d
+			y: 0.00d
+		}
+		{
+			dependencies: ["11F32A7C70AC0790", "59E1DECB99C95B3B"]
+			description: ["Центр Fusion Crafting. Требует калорит с Венеры."]
+			id: "5D580DEDB2EE28D8"
+			rewards: [
+				{ id: "182ADCEB3E55B29C", type: "xp", xp: 1000 }
+			]
+			tasks: [
+				{ id: "5B305B86690CF139", item: "draconicevolution:crafting_core", type: "item" }
+			]
+			title: "Ядро слияния"
+			x: 5.25d
+			y: 1.50d
+		}
+		{
+			dependencies: ["5D580DEDB2EE28D8"]
+			description: ["Расставьте инжекторы вокруг ядра слияния."]
+			id: "121F99DE7754552B"
+			rewards: [
+				{ id: "3564F6C3B7EDA96E", type: "xp", xp: 500 }
+			]
+			tasks: [
+				{ id: "14F07CAAF7592852", item: "draconicevolution:basic_crafting_injector", type: "item", count: 4L }
+			]
+			title: "Инжекторы"
+			x: 7.00d
+			y: -0.75d
+		}
+		{
+			dependencies: ["11F32A7C70AC0790", "1B50A27EF43216CA"]
+			description: ["Требует звезду Незера. Пора снова навестить Иссушителя."]
+			id: "71720075B59DEB04"
+			rewards: [
+				{ id: "5189AA5256EFACA2", type: "xp", xp: 1000 }
+			]
+			tasks: [
+				{ id: "7C761BB5EB70A383", item: "draconicevolution:wyvern_core", type: "item", count: 2L }
+			]
+			title: "Ядро виверны"
+			x: 5.25d
+			y: 3.00d
+		}
+		{
+			dependencies: ["121F99DE7754552B", "71720075B59DEB04"]
+			description: ["Инжекторы второго уровня для сложных рецептов."]
+			id: "346CEFC730C92767"
+			rewards: [
+				{ id: "79538B145BA93A01", type: "xp", xp: 800 }
+			]
+			tasks: [
+				{ id: "3709D5992F01B3D3", item: "draconicevolution:wyvern_crafting_injector", type: "item", count: 4L }
+			]
+			title: "Инжекторы виверны"
+			x: 8.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["71720075B59DEB04"]
+			description: ["Многоблочное хранилище энергии невероятной ёмкости."]
+			id: "35622F5880741948"
+			rewards: [
+				{ id: "127588F20D3E5A65", type: "xp", xp: 1500 }
+			]
+			tasks: [
+				{ id: "11994593046A6037", item: "draconicevolution:energy_core", type: "item" },
+				{ id: "3D32352B066E6636", item: "draconicevolution:energy_core_stabilizer", type: "item", count: 4L },
+				{ id: "792882666195FA75", item: "draconicevolution:energy_pylon", type: "item" }
+			]
+			title: "Энергоядро"
+			x: 7.00d
+			y: 0.75d
+		}
+		{
+			dependencies: ["346CEFC730C92767"]
+			description: ["Кирка и меч виверны — с модулями и энергией."]
+			id: "13A7E9F51FC4E208"
+			rewards: [
+				{ id: "53BCA3FD0339CB4D", type: "xp", xp: 1000 }
+			]
+			tasks: [
+				{ id: "3AED424C11EA60E1", item: "draconicevolution:wyvern_pickaxe", type: "item" },
+				{ id: "1C59AD53E10F5CAB", item: "draconicevolution:wyvern_sword", type: "item" }
+			]
+			title: "Инструменты виверны"
+			x: 10.50d
+			y: -1.50d
+		}
+		{
+			dependencies: ["346CEFC730C92767"]
+			description: ["Нагрудник виверны с энергощитом."]
+			id: "171A740F7E7DD310"
+			rewards: [
+				{ id: "543D7690F8EB170A", type: "xp", xp: 1200 }
+			]
+			tasks: [
+				{ id: "1AD48B951A16663B", item: "draconicevolution:wyvern_chestpiece", type: "item" }
+			]
+			title: "Броня виверны"
+			x: 10.50d
+			y: 0.00d
+		}
+		{
+			dependencies: ["346CEFC730C92767", "55465EA884350861"]
+			description: ["Создаётся в Fusion Crafting из сердца дракона."]
+			id: "774B50972BE2D23A"
+			rewards: [
+				{ id: "7044765AD1F57BE5", type: "xp", xp: 1500 }
+			]
+			tasks: [
+				{ id: "75DE63C2CEF9957F", item: "draconicevolution:awakened_draconium_ingot", type: "item", count: 4L }
+			]
+			title: "Пробуждённый драконий"
+			x: 10.50d
+			y: 1.50d
+		}
+		{
+			dependencies: ["55465EA884350861"]
+			description: ["Выпадает при убийстве эндер-дракона на кристалле... или при повторном призыве."]
+			id: "56654E6E2AFC0BFE"
+			rewards: [
+				{ id: "1292E58F6DBCED42", type: "xp", xp: 1000 }
+			]
+			tasks: [
+				{ id: "5607C392F6FCA3D6", item: "draconicevolution:dragon_heart", type: "item" }
+			]
+			title: "Сердце дракона"
+			x: 0.00d
+			y: 0.75d
+		}
+		{
+			dependencies: ["774B50972BE2D23A"]
+			description: ["Ядро для драконьего уровня."]
+			id: "1D957B3376E24988"
+			rewards: [
+				{ id: "36C73B5EBAB416E9", type: "xp", xp: 2000 }
+			]
+			tasks: [
+				{ id: "7CE961C817C1818E", item: "draconicevolution:awakened_core", type: "item" }
+			]
+			title: "Пробуждённое ядро"
+			x: 12.25d
+			y: 0.00d
+		}
+		{
+			dependencies: ["1D957B3376E24988"]
+			description: ["Инструменты драконьего уровня."]
+			id: "39EC3EAE26B3CE07"
+			rewards: [
+				{ id: "7546ADEE35B35342", type: "xp", xp: 2500 }
+			]
+			tasks: [
+				{ id: "3150891CBF6082C6", item: "draconicevolution:draconic_pickaxe", type: "item" },
+				{ id: "160264C424EAB3C4", item: "draconicevolution:draconic_sword", type: "item" }
+			]
+			title: "Драконьи инструменты"
+			x: 14.00d
+			y: -0.75d
+		}
+		{
+			dependencies: ["1D957B3376E24988"]
+			description: ["Нагрудник драконьего уровня — почти неуязвимость."]
+			id: "3F64FA9CBD65F15F"
+			rewards: [
+				{ id: "127761BCE1D43702", type: "xp", xp: 3000 }
+			]
+			tasks: [
+				{ id: "583CD4800FFFABAE", item: "draconicevolution:draconic_chestpiece", type: "item" }
+			]
+			title: "Драконья броня"
+			x: 14.00d
+			y: 0.75d
+		}
+		{
+			dependencies: ["3F64FA9CBD65F15F"]
+			description: ["Победите Хранителя хаоса на острове в Крае. Это самый сложный бой сборки."]
+			id: "350C3B8CF13BC3FB"
+			rewards: [
+				{ id: "744DE4F08A8C2284", type: "xp", xp: 3000 }
+			]
+			tasks: [
+				{ id: "7B63807B11F637FF", item: "draconicevolution:chaos_shard", type: "item" }
+			]
+			title: "Осколок хаоса"
+			x: 15.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["350C3B8CF13BC3FB"]
+			description: ["Последний уровень материалов."]
+			id: "70859AD9C2A7CD6D"
+			rewards: [
+				{ id: "31C54406D0F4E7A3", type: "xp", xp: 4000 }
+			]
+			tasks: [
+				{ id: "1AC9C20F119DF7BB", item: "draconicevolution:chaotic_core", type: "item" }
+			]
+			title: "Хаотическое ядро"
+			x: 17.50d
+			y: -0.75d
+		}
+		{
+			dependencies: ["350C3B8CF13BC3FB", "35622F5880741948"]
+			description: ["Самая мощная (и опасная) электростанция. Неправильный запуск — кратер на месте базы."]
+			id: "3BEC47534FE18DD4"
+			rewards: [
+				{ id: "1F70B75C27BE4084", type: "xp", xp: 4000 }
+			]
+			tasks: [
+				{ id: "3B9D03ED81142CF2", item: "draconicevolution:reactor_core", type: "item" },
+				{ id: "7E1ECAA0E60BEDB6", item: "draconicevolution:reactor_stabilizer", type: "item", count: 4L },
+				{ id: "195BDBCE70D72734", item: "draconicevolution:reactor_injector", type: "item" }
+			]
+			title: "Драконий реактор"
+			x: 17.50d
+			y: 0.75d
+		}
+		{
+			dependencies: ["70859AD9C2A7CD6D"]
+			description: ["Вершина прогрессии Tech & Dragons. Поздравляем!"]
+			id: "5D84B1C1DF011E94"
+			rewards: [
+				{ id: "7E6AA3085E5B40EE", type: "xp", xp: 10000 }
+			]
+			tasks: [
+				{ id: "321108B79C6C7892", item: "draconicevolution:chaotic_chestpiece", type: "item" }
+			]
+			title: "Хаотическая броня"
+			x: 19.25d
+			y: 0.00d
+		}
+	]
+	title: "Этап 5 — Draconic Evolution"
+}

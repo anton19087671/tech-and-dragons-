@@ -1,0 +1,491 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stage4"
+	group: ""
+	icon: "ad_astra:tier_1_rocket"
+	id: "3F026B34F182EB26"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["739F154BCEBCB55E"]
+			description: ["Extreme Reactors работают на йеллориуме или уране."]
+			id: "76E2A5A25BEBD958"
+			rewards: [
+				{ id: "5FF5B07832F0154D", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "3FEAC98D863837FD", item: "bigreactors:yellorium_ingot", type: "item", count: 16L }
+			]
+			title: "Йеллориум"
+			x: 0.00d
+			y: -4.50d
+		}
+		{
+			dependencies: ["76E2A5A25BEBD958"]
+			description: ["Графит нужен для корпуса реактора."]
+			id: "3545D7A70CF9B987"
+			rewards: [
+				{ id: "5D903386FC3C9872", type: "xp", xp: 100 }
+			]
+			tasks: [
+				{ id: "164C97D58BA657CE", item: "bigreactors:graphite_ingot", type: "item", count: 16L }
+			]
+			title: "Графит"
+			x: 1.75d
+			y: -3.00d
+		}
+		{
+			dependencies: ["3545D7A70CF9B987"]
+			description: ["Контроллер теперь требует продвинутую схему Mekanism. Соберите реактор 3×3×3 и больше."]
+			id: "1120FF5F036FB689"
+			rewards: [
+				{ id: "15F4CD48EAF57731", type: "xp", xp: 400 }
+			]
+			tasks: [
+				{ id: "1A3B4151B888E313", item: "bigreactors:basic_reactorcontroller", type: "item" },
+				{ id: "1B8B8DC3786F98F8", item: "bigreactors:basic_reactorcasing", type: "item", count: 20L },
+				{ id: "1A2CBACC951831BB", item: "bigreactors:basic_reactorfuelrod", type: "item" }
+			]
+			title: "Базовый реактор"
+			x: 3.50d
+			y: -2.25d
+		}
+		{
+			dependencies: ["1120FF5F036FB689", "78D44CCC69F2CBC6"]
+			description: ["Большой реактор с жидкостным охлаждением. Требует элитные схемы."]
+			id: "1CEB6F46A7F55AA2"
+			rewards: [
+				{ id: "79A98DC101E0A80A", type: "xp", xp: 600 }
+			]
+			tasks: [
+				{ id: "575788A38732801E", item: "bigreactors:reinforced_reactorcontroller", type: "item" }
+			]
+			title: "Укреплённый реактор"
+			x: 5.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["1CEB6F46A7F55AA2"]
+			description: ["Пар от реактора крутит турбину — в разы эффективнее прямой выработки."]
+			id: "304F5EA92A9F3960"
+			rewards: [
+				{ id: "76E762B95C37A685", type: "xp", xp: 800 }
+			]
+			tasks: [
+				{ id: "3E1F723EC30B71B9", item: "bigreactors:reinforced_turbinecontroller", type: "item" },
+				{ id: "3CDF8738755D40BA", item: "bigreactors:reinforced_turbinerotorblade", type: "item", count: 8L }
+			]
+			title: "Турбина"
+			x: 7.00d
+			y: -0.75d
+		}
+		{
+			dependencies: ["1120FF5F036FB689"]
+			description: ["Отработанное топливо можно переработать."]
+			id: "1EC977AF1BFC6F5F"
+			rewards: [
+				{ id: "5DAE150386AB232A", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "1A0FFD9C108105E1", item: "bigreactors:cyanite_ingot", type: "item", count: 8L }
+			]
+			title: "Цианит"
+			x: 5.25d
+			y: -0.75d
+		}
+		{
+			dependencies: ["739F154BCEBCB55E"]
+			description: ["Уран — топливо для ядерного реактора Mekanism."]
+			id: "3A4212E82FCCF023"
+			rewards: [
+				{ id: "1877914CB69F5353", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "5B99084ED485EEFA", item: "mekanism:ingot_uranium", type: "item", count: 16L }
+			]
+			title: "Уран Mekanism"
+			x: 0.00d
+			y: -3.00d
+		}
+		{
+			dependencies: ["3A4212E82FCCF023", "78D44CCC69F2CBC6"]
+			description: ["Реактор деления Mekanism: мощный, но опасный. Следите за температурой!"]
+			id: "34CD22F30A7AE0A2"
+			rewards: [
+				{ id: "190235EFE717897A", type: "xp", xp: 500 }
+			]
+			tasks: [
+				{ id: "5FDA4D33C4405223", item: "mekanismgenerators:fission_reactor_casing", type: "item", count: 32L },
+				{ id: "156FFA0DDE6667DF", item: "mekanismgenerators:fission_fuel_assembly", type: "item", count: 4L }
+			]
+			title: "Корпус реактора деления"
+			x: 1.75d
+			y: -1.50d
+		}
+		{
+			dependencies: ["34CD22F30A7AE0A2"]
+			description: ["Турбина Mekanism на паре реактора."]
+			id: "508BB5B56A2AEB3A"
+			rewards: [
+				{ id: "18EC56A479598090", type: "xp", xp: 600 }
+			]
+			tasks: [
+				{ id: "5D43118D9EB22384", item: "mekanismgenerators:turbine_rotor", type: "item", count: 4L },
+				{ id: "34005290D91AED80", item: "mekanismgenerators:turbine_blade", type: "item", count: 8L },
+				{ id: "300E806D36DDDDBA", item: "mekanismgenerators:rotational_complex", type: "item" }
+			]
+			title: "Промышленная турбина"
+			x: 3.50d
+			y: -0.75d
+		}
+		{
+			dependencies: ["78D44CCC69F2CBC6"]
+			description: ["Огромное хранилище энергии — миллиарды FE."]
+			id: "36A6A35DF4396FCE"
+			rewards: [
+				{ id: "53496B0ADDBB3027", type: "xp", xp: 500 }
+			]
+			tasks: [
+				{ id: "75439FC1B04E64BE", item: "mekanism:induction_casing", type: "item", count: 16L },
+				{ id: "7D3D78F6CD16DACD", item: "mekanism:induction_port", type: "item", count: 2L },
+				{ id: "5E2E047C147D075D", item: "mekanism:basic_induction_cell", type: "item" }
+			]
+			title: "Индукционная матрица"
+			x: 0.00d
+			y: -1.50d
+		}
+		{
+			dependencies: ["78D44CCC69F2CBC6"]
+			description: ["Нужна для термоядерного реактора."]
+			id: "5309BBC034BCC5F2"
+			rewards: [
+				{ id: "523ECE9108FDEA36", type: "xp", xp: 500 }
+			]
+			tasks: [
+				{ id: "300C914D0253009A", item: "mekanism:ultimate_control_circuit", type: "item", count: 4L }
+			]
+			title: "Абсолютная схема"
+			x: 0.00d
+			y: 0.00d
+		}
+		{
+			dependencies: ["5309BBC034BCC5F2", "508BB5B56A2AEB3A"]
+			description: ["Вершина энергетики Mekanism."]
+			id: "5451807A250D4732"
+			rewards: [
+				{ id: "77B7A6D8FB8F0C80", type: "xp", xp: 1500 }
+			]
+			tasks: [
+				{ id: "5009FCCE13946508", item: "mekanismgenerators:fusion_reactor_controller", type: "item" }
+			]
+			title: "Термоядерный реактор"
+			x: 5.25d
+			y: 0.75d
+		}
+		{
+			dependencies: ["78D44CCC69F2CBC6"]
+			description: ["Беспроводная передача энергии по всей базе. Ядро Flux теперь требует элитную схему."]
+			id: "368599D29AF92C80"
+			rewards: [
+				{ id: "1F0C9D663FDE6278", type: "xp", xp: 400 }
+			]
+			tasks: [
+				{ id: "5BBE8592DA20EDDF", item: "fluxnetworks:flux_controller", type: "item" },
+				{ id: "33F9BB1903199668", item: "fluxnetworks:flux_point", type: "item", count: 2L },
+				{ id: "3E970D6F163BED67", item: "fluxnetworks:flux_plug", type: "item", count: 2L }
+			]
+			title: "Сеть Flux"
+			x: 0.00d
+			y: 1.50d
+		}
+		{
+			dependencies: ["368599D29AF92C80"]
+			description: ["Буфер для сети Flux."]
+			id: "33AD42C3CF376A00"
+			rewards: [
+				{ id: "704F287BEC13BE52", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "3E385FB07347BB33", item: "fluxnetworks:herculean_flux_storage", type: "item" }
+			]
+			title: "Хранилище Flux"
+			x: 1.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["78D44CCC69F2CBC6"]
+			description: ["Добывает руду в огромном радиусе."]
+			id: "3E6FB3C512CEEB28"
+			rewards: [
+				{ id: "3EDE26EF0ACB4E59", type: "xp", xp: 500 }
+			]
+			tasks: [
+				{ id: "3480D486BFE4FC5F", item: "mekanism:digital_miner", type: "item" }
+			]
+			title: "Цифровой шахтёр"
+			x: 0.00d
+			y: 3.00d
+		}
+		{
+			dependencies: ["5309BBC034BCC5F2"]
+			description: ["Лучшая броня Mekanism. Требует много энергии и модулей."]
+			id: "3759C7C5E3EA1217"
+			rewards: [
+				{ id: "581CE70753F8EF9E", type: "xp", xp: 1000 }
+			]
+			tasks: [
+				{ id: "10A09100A25CBD7A", item: "mekanism:mekasuit_bodyarmor", type: "item" }
+			]
+			title: "МекаКостюм"
+			x: 1.75d
+			y: 1.50d
+		}
+		{
+			dependencies: ["5C78BECDCF9BA4CB"]
+			description: ["Ad Astra: из стали делаются корпуса ракет."]
+			id: "31A5A66A94DC5CD3"
+			rewards: [
+				{ id: "7591F92CE7B238FA", type: "xp", xp: 150 }
+			]
+			tasks: [
+				{ id: "1527B2C16A65EBDB", item: "ad_astra:steel_plate", type: "item", count: 16L }
+			]
+			title: "Стальные пластины"
+			x: 0.00d
+			y: 4.50d
+		}
+		{
+			dependencies: ["31A5A66A94DC5CD3"]
+			description: ["Здесь собираются ракеты."]
+			id: "132598C794221EFB"
+			rewards: [
+				{ id: "78C52435AB2E57A7", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "5F698C338A3D300F", item: "ad_astra:nasa_workbench", type: "item" }
+			]
+			title: "Верстак NASA"
+			x: 1.75d
+			y: 3.00d
+		}
+		{
+			dependencies: ["132598C794221EFB"]
+			description: ["Нефтеперегонный завод Ad Astra делает топливо из нефти."]
+			id: "354023B1D0145A83"
+			rewards: [
+				{ id: "7900264C919516DD", type: "xp", xp: 200 }
+			]
+			tasks: [
+				{ id: "158A30D1A6220A99", item: "ad_astra:fuel_refinery", type: "item" }
+			]
+			title: "Ракетное топливо"
+			x: 3.50d
+			y: 0.75d
+		}
+		{
+			dependencies: ["132598C794221EFB"]
+			description: ["Без скафандра и кислорода в космосе не выжить."]
+			id: "5CD8E10CF4DD356F"
+			rewards: [
+				{ id: "56CB4896F3EAB28F", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "322E55D5B1D93DB7", item: "ad_astra:space_helmet", type: "item" },
+				{ id: "38A6BFC68E3CB212", item: "ad_astra:space_suit", type: "item" },
+				{ id: "3B65EEB3B286BCF8", item: "ad_astra:space_pants", type: "item" },
+				{ id: "1FF18C9EDB4159B1", item: "ad_astra:space_boots", type: "item" }
+			]
+			title: "Скафандр"
+			x: 3.50d
+			y: 2.25d
+		}
+		{
+			dependencies: ["5CD8E10CF4DD356F"]
+			description: ["Загрузчик кислорода заправляет скафандр, распределитель — базу."]
+			id: "52B977EDAF87BE35"
+			rewards: [
+				{ id: "3D5B7130BA35D8EB", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "31F84084C62B73E8", item: "ad_astra:oxygen_loader", type: "item" },
+				{ id: "7D5A9871858CE21C", item: "ad_astra:oxygen_distributor", type: "item" }
+			]
+			title: "Кислород"
+			x: 5.25d
+			y: 2.25d
+		}
+		{
+			dependencies: ["354023B1D0145A83", "52B977EDAF87BE35"]
+			description: ["Цель — Луна!"]
+			id: "1039483974BFAF9B"
+			rewards: [
+				{ id: "1F3471274A009650", type: "xp", xp: 500 }
+			]
+			tasks: [
+				{ id: "5484EB79D262485D", item: "ad_astra:tier_1_rocket", type: "item" },
+				{ id: "5E3F516C5BA51E8B", item: "ad_astra:launch_pad", type: "item" }
+			]
+			title: "Ракета 1-го уровня"
+			x: 7.00d
+			y: 0.75d
+		}
+		{
+			dependencies: ["1039483974BFAF9B"]
+			description: ["Первый шаг человечества... и ваш."]
+			id: "1A4DD9C5539648E8"
+			rewards: [
+				{ id: "1069A9483C881127", type: "xp", xp: 800 },
+				{ id: "36051102B7FB5570", item: "ad_astra:cheese", type: "item", count: 4 }
+			]
+			tasks: [
+				{ dimension: "ad_astra:moon", id: "7987016818EE2129", type: "dimension" }
+			]
+			title: "Луна"
+			x: 8.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["1A4DD9C5539648E8"]
+			description: ["Металл Луны — материал для ракеты 2-го уровня."]
+			id: "1F714786A67B3350"
+			rewards: [
+				{ id: "1CD440B8E9B80477", type: "xp", xp: 300 }
+			]
+			tasks: [
+				{ id: "3768E957D31852C6", item: "ad_astra:desh_ingot", type: "item", count: 16L }
+			]
+			title: "Деш"
+			x: 10.50d
+			y: 0.00d
+		}
+		{
+			dependencies: ["1F714786A67B3350"]
+			description: ["Курс на Марс."]
+			id: "345B159141BEC39B"
+			rewards: [
+				{ id: "3844C1BB720DD3D6", type: "xp", xp: 700 }
+			]
+			tasks: [
+				{ id: "78FC1C7305C362D5", item: "ad_astra:tier_2_rocket", type: "item" }
+			]
+			title: "Ракета 2-го уровня"
+			x: 12.25d
+			y: 0.00d
+		}
+		{
+			dependencies: ["345B159141BEC39B"]
+			description: ["Красная планета."]
+			id: "36C1AC4F905CA3D8"
+			rewards: [
+				{ id: "3E9D9B96CFD8C01B", type: "xp", xp: 1000 }
+			]
+			tasks: [
+				{ dimension: "ad_astra:mars", id: "55E8BF46C04E806C", type: "dimension" }
+			]
+			title: "Марс"
+			x: 14.00d
+			y: 0.00d
+		}
+		{
+			dependencies: ["36C1AC4F905CA3D8"]
+			description: ["Марсианский металл. Нужен и для ракеты 3, и для ядра дракония!"]
+			id: "7E2CD1216DAC0215"
+			rewards: [
+				{ id: "5E8505195C7C426D", type: "xp", xp: 400 }
+			]
+			tasks: [
+				{ id: "73065CD02EF02072", item: "ad_astra:ostrum_ingot", type: "item", count: 16L }
+			]
+			title: "Остриум"
+			x: 15.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["7E2CD1216DAC0215"]
+			description: ["Венера и Меркурий ждут."]
+			id: "3E70F40686C4A1B4"
+			rewards: [
+				{ id: "3B2E27D0DDEDB5AB", type: "xp", xp: 900 }
+			]
+			tasks: [
+				{ id: "50E13AEFD7FDEF98", item: "ad_astra:tier_3_rocket", type: "item" }
+			]
+			title: "Ракета 3-го уровня"
+			x: 17.50d
+			y: 0.00d
+		}
+		{
+			dependencies: ["3E70F40686C4A1B4"]
+			description: ["Кислотная и горячая планета."]
+			id: "53C6978A38CB4F05"
+			rewards: [
+				{ id: "1BE5459454760E26", type: "xp", xp: 1200 }
+			]
+			tasks: [
+				{ dimension: "ad_astra:venus", id: "1002B5F6B3BDC147", type: "dimension" }
+			]
+			title: "Венера"
+			x: 19.25d
+			y: -0.75d
+		}
+		{
+			dependencies: ["53C6978A38CB4F05"]
+			description: ["Самый ценный металл космоса — ключ к Fusion Crafting Draconic."]
+			id: "59E1DECB99C95B3B"
+			rewards: [
+				{ id: "309FDA3F3FA50D02", type: "xp", xp: 500 }
+			]
+			tasks: [
+				{ id: "1564BA3394EE1BD0", item: "ad_astra:calorite_ingot", type: "item", count: 16L }
+			]
+			title: "Калорит"
+			x: 21.00d
+			y: 0.00d
+		}
+		{
+			dependencies: ["3E70F40686C4A1B4"]
+			description: ["Ближайшая к Солнцу планета."]
+			id: "7065E83784368A5D"
+			rewards: [
+				{ id: "33D37BDB109BB65E", type: "xp", xp: 1000 }
+			]
+			tasks: [
+				{ dimension: "ad_astra:mercury", id: "7509C32D972B8284", type: "dimension" }
+			]
+			title: "Меркурий"
+			x: 19.25d
+			y: 0.75d
+		}
+		{
+			dependencies: ["59E1DECB99C95B3B"]
+			description: ["Последняя ракета — к ледяному Глацио."]
+			id: "7E4A58DC905C0F21"
+			rewards: [
+				{ id: "1D7697F65E7BBB6F", type: "xp", xp: 1200 }
+			]
+			tasks: [
+				{ id: "522FD8847782E940", item: "ad_astra:tier_4_rocket", type: "item" }
+			]
+			title: "Ракета 4-го уровня"
+			x: 22.75d
+			y: 0.00d
+		}
+		{
+			dependencies: ["7E4A58DC905C0F21"]
+			description: ["Планета в другой звёздной системе."]
+			id: "19F8D681B4B4AF57"
+			rewards: [
+				{ id: "34E16074F529958A", type: "xp", xp: 1500 }
+			]
+			tasks: [
+				{ dimension: "ad_astra:glacio", id: "78EDD0026E16EFEF", type: "dimension" }
+			]
+			title: "Глацио"
+			x: 24.50d
+			y: 0.00d
+		}
+	]
+	title: "Этап 4 — Ядерная энергетика и космос"
+}
