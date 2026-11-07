@@ -86,6 +86,7 @@
 Библиотека (зависимость);geckolib;4.8.4;geckolib-forge-1.20.1-4.8.4.jar;release;Клиент + сервер;Mowzie's Mobs;https://modrinth.com/mod/geckolib
 Библиотека (зависимость);glodium;1.20-1.5-forge;Glodium-1.20-1.5-forge.jar;release;Клиент + сервер;ExtendedAE;https://modrinth.com/mod/glodium
 Библиотека (зависимость);guideme;20.1.15;guideme-20.1.15.jar;release;Клиент + сервер;Applied Energistics 2, ExtendedAE;https://modrinth.com/mod/guideme
+Библиотека (зависимость);Kotlin for Forge;4.12.0;kotlinforforge-4.12.0-all.jar;release;Клиент + сервер;Inventory Profiles Next, libIPN;https://modrinth.com/mod/kotlin-for-forge
 Библиотека (зависимость);libipn;forge-1.20-4.0.2;libIPN-forge-1.20-4.0.2.jar;release;Только клиент;Inventory Profiles Next;https://modrinth.com/mod/libipn
 Библиотека (зависимость);lionfishapi;3.0;lionfishapi-3.0.jar;release;Клиент + сервер;L_Ender's Cataclysm;https://modrinth.com/mod/lionfish-api
 Библиотека (зависимость);Power Utilities;1.8;powerutils-1.8.jar;release;Клиент + сервер;;https://modrinth.com/mod/power-utilities

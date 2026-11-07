@@ -2,7 +2,7 @@
 
 Сборка для **Minecraft 1.20.1** на **Forge 47.4.28** (Java 17) для игры вдвоём: технологии, автоматизация, подземелья, боссы, космос и Draconic Evolution. Прохождение ведут **207 квестов** на русском.
 
-Состав: **73 мода + 32 библиотеки**. Все версии проверены на совместимость, сервер с полной сборкой запускался и тестировался.
+Состав: **73 мода + 33 библиотеки**. Все версии проверены на совместимость, сервер с полной сборкой запускался и тестировался.
 
 ---
 
@@ -15,7 +15,7 @@
 
 1. Правый клик по архиву → **«Извлечь всё…»** → например, в `C:\Сборка`.
 2. Внутри будут папки:
-   - `Tech-and-Dragons` — **клиентская сборка** (`mods` — 105 файлов, `config`, `kubejs`, `shaderpacks`, `extra`, документы);
+   - `Tech-and-Dragons` — **клиентская сборка** (`mods` — 106 файлов, `config`, `kubejs`, `shaderpacks`, `extra`, документы);
    - `Tech-and-Dragons-Server` — только для отдельного сервера, для игры через Porthole не нужна.
 
 ## 3. Установка в TLauncher
@@ -178,10 +178,11 @@
 | [spark](https://modrinth.com/mod/spark) | 1.10.53-forge | `spark-1.10.53-forge.jar` | клиент + сервер |
 | [Trash Cans](https://modrinth.com/mod/trash-cans) | 1.1.2-forge-mc1.20.4 | `trashcans-1.1.2-forge-mc1.20.4.jar` | клиент + сервер |
 
-### Библиотека (зависимость) (32)
+### Библиотека (зависимость) (33)
 
 | Мод | Версия | Файл | Где ставить |
 |---|---|---|---|
+| [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge) | 4.12.0 | `kotlinforforge-4.12.0-all.jar` | клиент + сервер |
 | [architectury](https://modrinth.com/mod/architectury-api) | 9.2.14+forge | `architectury-9.2.14-forge.jar` | клиент + сервер |
 | [balm](https://modrinth.com/mod/balm) | 7.3.44+forge-1.20.1 | `balm-forge-1.20.1-7.3.44.jar` | клиент + сервер |
 | [botarium](https://modrinth.com/mod/botarium) | 2.3.4 | `botarium-forge-1.20.1-2.3.4.jar` | клиент + сервер |

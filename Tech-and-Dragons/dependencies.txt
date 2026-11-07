@@ -66,4 +66,7 @@ yungsapi 1.20-Forge-4.0.6  (YungsApi-1.20-Forge-4.0.6.jar)
 zerocore 1.20.1-2.1.45  (ZeroCore2-1.20.1-2.1.45.jar)
     нужна для: Extreme Reactors
 
+Kotlin for Forge 4.12.0  (kotlinforforge-4.12.0-all.jar)
+    нужна для: Inventory Profiles Next, libIPN (загрузчик языка Kotlin)
+
 Встроенные (jar-in-jar, отдельно не ставятся): Flywheel и Ponder (внутри Create), MixinExtras (внутри Create/Embeddium/ModernFix), Common Networking (внутри JourneyMap).
