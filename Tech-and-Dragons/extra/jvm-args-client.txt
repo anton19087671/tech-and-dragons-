@@ -1,4 +1,5 @@
-Память в TLauncher (ползунок): 7168 МБ (7 ГБ). Минимум 6144 МБ. Больше 8 ГБ не ставить.
+Память в TLauncher (ползунок): 6144 МБ (6 ГБ). На ПК с 16 ГБ ОЗУ больше не ставить:
+Windows и остальным программам тоже нужна память.
 
 Дополнительные аргументы JVM (вставить одной строкой):
 -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M -XX:+ParallelRefProcEnabled -XX:+DisableExplicitGC
