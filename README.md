@@ -2,7 +2,7 @@
 
 Сборка для **Minecraft 1.20.1** на **Forge 47.4.28** (Java 17) для игры вдвоём: технологии, автоматизация, подземелья, боссы, космос и Draconic Evolution. Прохождение ведут **207 квестов** на русском.
 
-Состав: **73 мода + 33 библиотеки**. Все версии проверены на совместимость, сервер с полной сборкой запускался и тестировался.
+Состав: **74 мода + 33 библиотеки**. Все версии проверены на совместимость, сервер с полной сборкой запускался и тестировался.
 
 ---
 
@@ -15,7 +15,7 @@
 
 1. Правый клик по архиву → **«Извлечь всё…»** → например, в `C:\Сборка`.
 2. Внутри будут папки:
-   - `Tech-and-Dragons` — **клиентская сборка** (`mods` — 106 файлов, `config`, `kubejs`, `shaderpacks`, `extra`, документы);
+   - `Tech-and-Dragons` — **клиентская сборка** (`mods` — 107 файлов, `config`, `kubejs`, `shaderpacks`, `extra`, документы);
    - `Tech-and-Dragons-Server` — только для отдельного сервера, для игры через Porthole не нужна.
 
 ## 3. Установка в TLauncher
@@ -147,6 +147,7 @@
 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) | 1.20.1-2.25.1-forge | `MouseTweaks-forge-mc1.20.1-2.25.1.jar` | только клиент |
 | [Nature's Compass](https://modrinth.com/mod/natures-compass) | 1.20.1-1.12.0-forge | `NaturesCompass-1.20.1-1.12.0-forge.jar` | клиент + сервер |
 | [Patchouli](https://modrinth.com/mod/patchouli) | 1.20.1-85-forge | `Patchouli-1.20.1-85-FORGE.jar` | клиент + сервер |
+| Tech & Dragons: Путеводитель (собственный) | 1.0.0 | `tdguide-1.0.0.jar` | клиент + сервер |
 | [Waystones](https://modrinth.com/mod/waystones) | 14.1.21+forge-1.20.1 | `waystones-forge-1.20.1-14.1.21.jar` | клиент + сервер |
 
 ### Оптимизация, графика, звук (10)
