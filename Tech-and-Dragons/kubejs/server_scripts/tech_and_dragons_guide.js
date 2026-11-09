@@ -14,3 +14,8 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('patchouli:guide_book', GUIDE_NBT), ['minecraft:book', 'minecraft:copper_ingot'])
     .id('kubejs:tdguide_book')
 })
+
+// Пластинка «Кто пчёлок уважает»: любой маленький цветок + палка
+ServerEvents.recipes(event => {
+  event.shapeless('kubejs:bees_song_disc', ['#minecraft:small_flowers', 'minecraft:stick']).id('kubejs:bees_song_disc')
+})

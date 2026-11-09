@@ -1,0 +1,5 @@
+{
+  "music.bees_song": {
+    "sounds": [ { "name": "kubejs:music/bees_song", "stream": true } ]
+  }
+}
