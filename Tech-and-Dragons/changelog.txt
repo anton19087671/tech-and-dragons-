@@ -1,5 +1,11 @@
 TECH & DRAGONS — BALANCED EDITION · ИСТОРИЯ ИЗМЕНЕНИЙ
 
+v1.1.3 (09.11.2026)
+- Industrial Upgrade: отключены радиоактивные зоны (config\industrialupgrade-common.toml:
+  radiationChunksEnabled = false, radiationDamageEnabled = false). Они красили туман,
+  небо и дождь в зелёный, рисовали зелёные столбы и наносили урон по всему миру.
+  Машины и радиоактивные материалы IU работают как раньше.
+
 v1.1.2 (09.11.2026)
 - Oculus 1.8.0 заменён на Mekalus 1.8.0.1 (mekalus-mc1.20.1-1.8.0.1.jar) — это Oculus
   с исправлениями для Mekanism. Исправлен вылет «Not filled all elements of the vertex»
