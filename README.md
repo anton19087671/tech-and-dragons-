@@ -1,6 +1,6 @@
 # Tech & Dragons — Balanced Edition
 
-Сборка для **Minecraft 1.20.1** на **Forge 47.4.28** (Java 17) для игры вдвоём: технологии, автоматизация, подземелья, боссы, космос и Draconic Evolution. Прохождение ведут **207 квестов** и книга-путеводитель на русском. Текущая версия — **1.1.1** (история изменений: `Tech-and-Dragons/changelog.txt`).
+Сборка для **Minecraft 1.20.1** на **Forge 47.4.28** (Java 17) для игры вдвоём: технологии, автоматизация, подземелья, боссы, космос и Draconic Evolution. Прохождение ведут **207 квестов** и книга-путеводитель на русском. Текущая версия — **1.1.2** (история изменений: `Tech-and-Dragons/changelog.txt`).
 
 Состав: **74 мода + 33 библиотеки**. Все версии проверены на совместимость, сервер с полной сборкой запускался и тестировался.
 
@@ -174,7 +174,7 @@
 | [FerriteCore](https://modrinth.com/mod/ferrite-core) | 6.0.1 | `ferritecore-6.0.1-forge.jar` | клиент + сервер |
 | [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) | 1.5.5+1.20.4-forge | `ImmediatelyFast-Forge-1.5.5+1.20.4.jar` | только клиент |
 | [ModernFix](https://modrinth.com/mod/modernfix) | 5.27.91+mc1.20.1 | `modernfix-forge-5.27.91+mc1.20.1.jar` | клиент + сервер |
-| [Oculus](https://modrinth.com/mod/oculus) | 1.20.1-1.8.0 | `oculus-mc1.20.1-1.8.0.jar` | только клиент |
+| [Mekalus (Oculus)](https://www.curseforge.com/minecraft/mc-mods/mekalus-oculus-fork-with-fixed-mekanism-mekasuit) | 1.8.0.1 | `mekalus-mc1.20.1-1.8.0.1.jar` | только клиент |
 | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) | forge-1.20.1-1.5.1 | `sound-physics-remastered-forge-1.20.1-1.5.1.jar` | только клиент |
 
 ### Дополнительно (9)

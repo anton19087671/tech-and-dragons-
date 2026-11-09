@@ -77,7 +77,7 @@ Minecraft 1.20.1 · Forge 47.4.28 (минимум 47.3.0) · Java 17
   FerriteCore — 6.0.1
   ImmediatelyFast — 1.5.5+1.20.4-forge   [только клиент]
   ModernFix — 5.27.91+mc1.20.1
-  Oculus — 1.20.1-1.8.0   [только клиент]
+  Mekalus (Oculus с исправлениями для Mekanism) — 1.8.0.1   [только клиент]
   Sound Physics Remastered — forge-1.20.1-1.5.1   [только клиент]   [статус: alpha]
 
 == Дополнительно (9)

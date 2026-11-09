@@ -8,5 +8,5 @@ dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar
 embeddium-0.3.31+mc1.20.1.jar
 entityculling-forge-1.11.3-mc1.20.1.jar
 libIPN-forge-1.20-4.0.2.jar
-oculus-mc1.20.1-1.8.0.jar
+mekalus-mc1.20.1-1.8.0.1.jar
 sound-physics-remastered-forge-1.20.1-1.5.1.jar
