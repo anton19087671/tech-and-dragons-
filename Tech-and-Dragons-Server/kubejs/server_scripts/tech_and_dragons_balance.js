@@ -15,4 +15,10 @@ ServerEvents.recipes(event => {
 
   // Беспроводная энергия Flux Networks — только после элитных схем.
   event.replaceInput({ id: 'fluxnetworks:fluxcore' }, 'minecraft:ender_eye', '#forge:circuits/elite')
+  // Андезит редкий (Terralith и BOP вытеснили его из генерации).
+  // Андезитовый сплав можно делать и из обычного камня: булыжник в печи → камень.
+  event.shaped('create:andesite_alloy', ['NS', 'SN'], { S: 'minecraft:stone', N: '#forge:nuggets/iron' }).id('kubejs:andesite_alloy_from_stone')
+  event.shaped('create:andesite_alloy', ['NS', 'SN'], { S: 'minecraft:stone', N: '#forge:nuggets/zinc' }).id('kubejs:andesite_alloy_from_stone_zinc')
+  event.custom({ type: 'create:mixing', ingredients: [{ item: 'minecraft:stone' }, { tag: 'forge:nuggets/iron' }], results: [{ item: 'create:andesite_alloy' }] }).id('kubejs:mixing/andesite_alloy_from_stone')
+  event.custom({ type: 'create:mixing', ingredients: [{ item: 'minecraft:stone' }, { tag: 'forge:nuggets/zinc' }], results: [{ item: 'create:andesite_alloy' }] }).id('kubejs:mixing/andesite_alloy_from_stone_zinc')
 })
