@@ -1,5 +1,12 @@
 TECH & DRAGONS — BALANCED EDITION · ИСТОРИЯ ИЗМЕНЕНИЙ
 
+v1.1.4 (09.11.2026)
+- config\brandon3055\DraconicEvolution.cfg: fancyToolModels = false. «Красивые» 3D-модели
+  инструментов Draconic не видны от третьего лица и с шейдерами; теперь инструменты
+  показываются обычными предметами и видны всегда.
+- Ресурспак Retro-DE-Models — экспериментальный: включать в меню, затем ПЕРЕЗАПУСТИТЬ
+  игру (при включении «на лету» Forge не находит OBJ-модели — фиолетово-чёрные квадраты).
+
 v1.1.3 (09.11.2026)
 - Industrial Upgrade: отключены радиоактивные зоны (config\industrialupgrade-common.toml:
   radiationChunksEnabled = false, radiationDamageEnabled = false). Они красили туман,
