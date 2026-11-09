@@ -197,7 +197,7 @@
 		}
 		{
 			dependencies: ["74C4E6B419D25DC2", "11A0C0F8DFFF298D"]
-			description: ["Босс Эвердауна."]
+			description: ["Босс Природного подземелья Эвербрайта. Сначала ломайте его деревянные стены, оглушённого бейте топором."]
 			id: "59604432747877BC"
 			rewards: [
 				{ id: "1639F9705C4A4B72", type: "xp", xp: 500 }
@@ -205,13 +205,13 @@
 			tasks: [
 				{ entity: "blue_skies:starlit_crusher", id: "5CE911A17D6E47AB", type: "kill", value: 1L }
 			]
-			title: "Звёздный крушитель"
+			title: "Крушитель Старлит"
 			x: 5.25d
 			y: -5.25d
 		}
 		{
 			dependencies: ["1952042F6B243076"]
-			description: ["Хитрый босс Эвербрайта."]
+			description: ["Босс Ослепительного подземелья Эвердауна. Держите щит и зелья огнестойкости."]
 			id: "3164941CAA088EE1"
 			rewards: [
 				{ id: "784E43DC9A37167A", type: "xp", xp: 500 }
@@ -225,7 +225,7 @@
 		}
 		{
 			dependencies: ["59604432747877BC"]
-			description: ["Гигантский паук-босс Эвердауна."]
+			description: ["Гигантский паук-босс Ядовитого подземелья Эвердауна. Рывок принимайте на щит."]
 			id: "152FCC91762A2195"
 			rewards: [
 				{ id: "5B183FE16317E88A", type: "xp", xp: 600 }
@@ -233,7 +233,7 @@
 			tasks: [
 				{ entity: "blue_skies:arachnarch", id: "7540E73048CB5774", type: "kill", value: 1L }
 			]
-			title: "Арахнарх"
+			title: "Арахна"
 			x: 7.00d
 			y: -3.00d
 		}

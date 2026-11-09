@@ -7,7 +7,7 @@ PlayerEvents.loggedIn(event => {
   if (player.persistentData.getBoolean('td_guide_given')) return
   player.give(Item.of('patchouli:guide_book', GUIDE_NBT))
   player.persistentData.putBoolean('td_guide_given', true)
-  player.tell(Text.gold('Путеводитель Tech & Dragons у вас в инвентаре. Начните с раздела «Путь развития».'))
+  player.tell(Text.gold('Путеводитель Tech & Dragons у вас в инвентаре. Начните с раздела «Прохождение».'))
 })
 
 ServerEvents.recipes(event => {
