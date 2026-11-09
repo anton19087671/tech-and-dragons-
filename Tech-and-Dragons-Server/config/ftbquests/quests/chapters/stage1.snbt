@@ -63,7 +63,7 @@
 			]
 			title: "Водяное колесо"
 			x: 5.25d
-			y: -1.50d
+			y: 0.00d
 		}
 		{
 			dependencies: ["7121D2E1D3E7BB0D"]
@@ -81,7 +81,7 @@
 			y: -1.50d
 		}
 		{
-			dependencies: ["5197F93CC4571B49"]
+			dependencies: ["113CA2C63C3D2CB7"]
 			description: ["Очки показывают скорость и нагрузку механизмов. Без них Create играть сложно."]
 			id: "776DBF8D521A2359"
 			rewards: [
@@ -91,11 +91,11 @@
 				{ id: "3BB21C0789A384A9", item: "create:goggles", type: "item" }
 			]
 			title: "Очки инженера"
-			x: 5.25d
-			y: 0.00d
+			x: 8.75d
+			y: -3.75d
 		}
 		{
-			dependencies: ["5197F93CC4571B49"]
+			dependencies: ["113CA2C63C3D2CB7"]
 			description: ["Ключ поворачивает и снимает блоки Create без потерь."]
 			id: "3A426444C19EEEFE"
 			rewards: [
@@ -105,8 +105,8 @@
 				{ id: "70FE8B9B79B5CAF9", item: "create:wrench", type: "item" }
 			]
 			title: "Гаечный ключ"
-			x: 5.25d
-			y: 1.50d
+			x: 8.75d
+			y: -2.25d
 		}
 		{
 			dependencies: ["74D8E77E9BA22C4C"]
@@ -162,7 +162,7 @@
 			]
 			title: "Конвейер"
 			x: 8.75d
-			y: -1.50d
+			y: -0.75d
 		}
 		{
 			dependencies: ["74D8E77E9BA22C4C"]
@@ -190,7 +190,7 @@
 			]
 			title: "Миксер"
 			x: 8.75d
-			y: 0.00d
+			y: 0.75d
 		}
 		{
 			dependencies: ["524EE609DDE23C96"]
@@ -218,7 +218,7 @@
 			]
 			title: "Цинк"
 			x: 8.75d
-			y: 1.50d
+			y: 2.25d
 		}
 		{
 			dependencies: ["5AAF21AE86406B52", "3BF7B1952C6D277E"]
@@ -232,7 +232,7 @@
 			]
 			title: "Латунь"
 			x: 10.50d
-			y: -1.50d
+			y: -0.75d
 		}
 		{
 			dependencies: ["3BF7B1952C6D277E"]
@@ -246,11 +246,11 @@
 			]
 			title: "Горелка ифрита"
 			x: 10.50d
-			y: 0.00d
+			y: 0.75d
 		}
 		{
-			dependencies: ["733817E7F4E9752B", "3D5266ECC2A0A713"]
-			description: ["Пара колёс дробит руду с шансом на дополнительную добычу — удвоение руды на потоке."]
+			dependencies: ["7C1B19234B8B3BFD", "3D5266ECC2A0A713"]
+			description: ["Пара колёс дробит руду с шансом на дополнительную добычу. Колёса собирают механические крафтеры."]
 			id: "1BF8C9F177834B2F"
 			rewards: [
 				{ id: "5138F852AAC1F453", type: "xp", xp: 150 }
@@ -259,8 +259,8 @@
 				{ id: "5DE3AF9FCCF15DCA", item: "create:crushing_wheel", type: "item", count: 2L }
 			]
 			title: "Дробильные колёса"
-			x: 10.50d
-			y: 1.50d
+			x: 15.75d
+			y: -2.25d
 		}
 		{
 			dependencies: ["5BC115E6198EFC97"]
@@ -303,7 +303,7 @@
 			]
 			title: "Прецизионный механизм"
 			x: 14.00d
-			y: -2.25d
+			y: -1.50d
 		}
 		{
 			dependencies: ["7741594E3A3DA210"]
@@ -317,7 +317,7 @@
 			]
 			title: "Манипулятор"
 			x: 14.00d
-			y: -0.75d
+			y: 0.00d
 		}
 		{
 			dependencies: ["524EE609DDE23C96"]
@@ -374,7 +374,7 @@
 			]
 			title: "Механический крафтер"
 			x: 14.00d
-			y: 0.75d
+			y: 1.50d
 		}
 		{
 			dependencies: ["7FC43DBE11FB7E44"]
@@ -388,7 +388,7 @@
 			]
 			title: "Регулятор скорости"
 			x: 15.75d
-			y: -3.00d
+			y: -0.75d
 		}
 		{
 			dependencies: ["7FC43DBE11FB7E44"]
@@ -402,11 +402,11 @@
 			]
 			title: "Железная дорога"
 			x: 15.75d
-			y: -1.50d
+			y: 0.75d
 		}
 		{
-			dependencies: ["17CB9539B5B77896"]
-			description: ["Create Crafts & Additions превращает вращение в энергию FE — мост к электрическим модам."]
+			dependencies: ["17CB9539B5B77896", "7C1B19234B8B3BFD", "3326934BA934D969"]
+			description: ["Create Crafts & Additions превращает вращение в энергию FE. Собирается на механических крафтерах; прутья и провода делает прокатный стан."]
 			id: "75C6CFC22F58941F"
 			rewards: [
 				{ id: "15623210CA19731F", type: "xp", xp: 200 },
@@ -416,7 +416,7 @@
 				{ id: "378E1E2D003AAD73", item: "createaddition:alternator", type: "item" }
 			]
 			title: "Генератор тока"
-			x: 14.00d
+			x: 15.75d
 			y: 2.25d
 		}
 		{
@@ -431,8 +431,8 @@
 				{ id: "39D9600AB2B0FF57", item: "createaddition:connector", type: "item", count: 4L }
 			]
 			title: "Медный провод"
-			x: 15.75d
-			y: 0.00d
+			x: 17.50d
+			y: -0.75d
 		}
 		{
 			dependencies: ["75C6CFC22F58941F"]
@@ -445,8 +445,8 @@
 				{ id: "5AFE953B830671F9", item: "createaddition:electric_motor", type: "item" }
 			]
 			title: "Электромотор"
-			x: 15.75d
-			y: 1.50d
+			x: 17.50d
+			y: 0.75d
 		}
 		{
 			dependencies: ["348C64DA9A0738E0"]
@@ -459,11 +459,11 @@
 				{ id: "33562C943B5176A3", item: "createaddition:capacitor", type: "item", count: 4L }
 			]
 			title: "Накопитель"
-			x: 17.50d
+			x: 19.25d
 			y: 0.00d
 		}
 		{
-			dependencies: ["75C6CFC22F58941F"]
+			dependencies: ["113CA2C63C3D2CB7"]
 			description: ["Делает провода и прутья из слитков."]
 			id: "3326934BA934D969"
 			rewards: [
@@ -473,8 +473,8 @@
 				{ id: "3A4E8C4BF9309A8E", item: "createaddition:rolling_mill", type: "item" }
 			]
 			title: "Прокатный стан"
-			x: 15.75d
-			y: 3.00d
+			x: 8.75d
+			y: 3.75d
 		}
 	]
 	title: "Этап 1 — Начало промышленности"
