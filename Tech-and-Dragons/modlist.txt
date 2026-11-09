@@ -65,7 +65,7 @@ Minecraft 1.20.1 · Forge 47.4.28 (минимум 47.3.0) · Java 17
   Mouse Tweaks — 1.20.1-2.25.1-forge   [только клиент]
   Nature's Compass — 1.20.1-1.12.0-forge
   Patchouli — 1.20.1-85-forge
-  Tech & Dragons: Путеводитель — 2.2.2   [собственный]
+  Tech & Dragons: Путеводитель — 2.2.3   [собственный]
   Waystones — 14.1.21+forge-1.20.1
 
 == Оптимизация, графика, звук (10)

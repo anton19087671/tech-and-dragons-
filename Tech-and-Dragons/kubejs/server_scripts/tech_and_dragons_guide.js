@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     .id('kubejs:tdguide_book')
 })
 
-// Пластинка «Кто пчёлок уважает»: любой маленький цветок + палка
+// Загадочная пластинка: любой маленький цветок + палка
 ServerEvents.recipes(event => {
   event.shapeless('kubejs:bees_song_disc', ['#minecraft:small_flowers', 'minecraft:stick']).id('kubejs:bees_song_disc')
 })
