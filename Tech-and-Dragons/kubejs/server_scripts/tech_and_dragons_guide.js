@@ -19,3 +19,8 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
   event.shapeless('kubejs:bees_song_disc', ['#minecraft:small_flowers', 'minecraft:stick']).id('kubejs:bees_song_disc')
 })
+
+// Без этого тега проигрыватель (1.20.1) не принимает пластинку
+ServerEvents.tags('item', event => {
+  event.add('minecraft:music_discs', 'kubejs:bees_song_disc')
+})
