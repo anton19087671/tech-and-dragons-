@@ -68,47 +68,13 @@ function tdScan(level, px, py, pz, block, givenSet) {
   return best ? { pos: best, dist: Math.sqrt(bestD), sections: secs.length } : null
 }
 
-// ---- список всех руд сборки (строится при первом использовании, когда теги уже загружены)
-// Все руды из тега forge:ores, сгруппированные по металлу: обычная, глубинная, адская, с планет и астероидов — одна группа.
-var TD_ORE_ORDER = ['diamond', 'netherite', 'emerald', 'lapis', 'quartz', 'redstone', 'gold', 'iron', 'copper', 'coal',
-  'zinc', 'tin', 'lead', 'osmium', 'uranium', 'nickel', 'silver', 'yellorite', 'draconium', 'certus_quartz', 'fluorite',
-  'ostrum', 'desh', 'calorite', 'aluminium', 'iridium', 'platinum', 'titanium', 'tungsten', 'sulfur', 'ruby', 'sapphire']
-var TD_ORE_PREFIX = /^(deepslate|nether|end|stone|sand|red_sand|netherrack|endstone|deep|asteroid|overworld|moon|mars|venus|mercury|glacio|everbright|everdawn|callisto|ceres|charon|deimos|dione|enceladus|eris|europa|ganymede|haumea|io|makemake|mimas|miranda|oberon|phobos|pluto|proteus|rhea|tethys|titan|titania|triton|umbriel|ariel)_/
-var TD_ORE_ALIAS = { bor: 'boron', theoprastite: 'theophrastite' }
-function tdOreBase(id) {
-  let path = id.split(':')[1]
-  if (path === 'ancient_debris') return { base: 'netherite', plain: true }
-  let b = path.split('/').pop().replace(/_ore$/, '').replace(/^ore_?/, '')
-  let plain = true
-  while (TD_ORE_PREFIX.test(b)) { b = b.replace(TD_ORE_PREFIX, ''); plain = false }
-  return { base: TD_ORE_ALIAS[b] || b || path, plain: plain }
-}
+// ---- список всех руд сборки (общий код — startup_scripts/tech_and_dragons_ore_list.js)
 function tdOreGroups() {
-  if (global.tdOres) return global.tdOres
-  let HashSet = Java.loadClass('java.util.HashSet')
-  let groups = {}
-  Ingredient.of('#forge:ores').getItemIds().forEach(id => {
-    id = String(id)
-    let ob = tdOreBase(id)
-    let b = Block.getBlock(id)
-    if (!b || String(b.builtInRegistryHolder().key().location()) == 'minecraft:air') return
-    let g = groups[ob.base]
-    if (!g) g = groups[ob.base] = { key: ob.base, blocks: new HashSet(), first: b, rank: 9 }
-    g.blocks.add(b)
-    let rank = id.startsWith('minecraft:') && ob.plain ? 0 : ob.plain ? 1 : 5
-    if (rank < g.rank) { g.rank = rank; g.first = b }
-  })
-  let list = Object.keys(groups).map(k => groups[k])
-  list.sort((a, b) => {
-    let ia = TD_ORE_ORDER.indexOf(a.key), ib = TD_ORE_ORDER.indexOf(b.key)
-    if (ia < 0) ia = 999
-    if (ib < 0) ib = 999
-    return ia != ib ? ia - ib : (a.key < b.key ? -1 : 1)
-  })
-  global.tdOres = list
-  return list
+  if (!global.tdOres) global.tdOres = global.tdBuildOreGroups()
+  return global.tdOres
 }
 global.tdOreGroups = tdOreGroups
+
 function tdOreByKey(key) { let l = tdOreGroups(); for (let i = 0; i < l.length; i++) if (l[i].key == key) return { g: l[i], i: i }; return null }
 
 // Поиск и сообщение в чат
