@@ -2,12 +2,19 @@
 // Выдаётся каждому игроку один раз при первом входе; потерянную можно скрафтить.
 const GUIDE_NBT = '{"patchouli:book":"tdguide:guide"}'
 
+// Версия сборки у ХОСТА мира (скрипты выполняются на том компьютере, где лежит мир).
+// Если здесь не 1.6.0 — хост не поставил обновление, и руды в старых чанках не появятся.
+const TD_PACK_VERSION = '1.6.0'
+
 PlayerEvents.loggedIn(event => {
   const player = event.player
+  let guideVer = 'нет'
+  try { if (Platform.isLoaded('tdguide')) guideVer = String(Platform.getInfo('tdguide').version) } catch (e) {}
+  player.tell(Text.green('Tech & Dragons ' + TD_PACK_VERSION + ' (у хоста мира). Книга: ' + guideVer + '. Руды в старых чанках дополняются сами.'))
   if (player.persistentData.getBoolean('td_guide_given')) return
   player.give(Item.of('patchouli:guide_book', GUIDE_NBT))
   player.persistentData.putBoolean('td_guide_given', true)
-  player.tell(Text.gold('Путеводитель Tech & Dragons у вас в инвентаре. Начните с раздела «Прохождение».'))
+  player.tell(Text.gold('Путеводитель Tech & Dragons у вас в инвентаре. Откройте раздел «Путь развития» и идите по шагам.'))
 })
 
 ServerEvents.recipes(event => {
