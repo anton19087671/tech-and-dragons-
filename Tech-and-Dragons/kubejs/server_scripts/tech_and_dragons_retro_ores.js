@@ -2,19 +2,19 @@
 // Industrial Upgrade раньше убирал всю обычную генерацию руд, поэтому в уже открытых чанках
 // нет алмазов, редстоуна, лазурита и почти нет железа/меди/угля/золота. Новые чанки генерируются
 // правильно, а этот скрипт понемногу дополняет СТАРЫЕ чанки вокруг игроков (радиус 6 чанков,
-// только Верхний мир): по одному чанку за 4 тика. Чанк, где руды уже есть, не трогается.
+// только Верхний мир): по одному чанку за 4 тика. Чанк, где уже есть алмазная руда, не трогается.
 var TD_RETRO = { tick: 0, queue: [], done: {}, fixed: 0 }
 var TD_RETRO_RADIUS = 6
 
 // руда: [обычный вариант, глубинный вариант, жил на чанк, блоков в жиле, yMin, yMax]
 var TD_RETRO_ORES = [
-  ['minecraft:diamond_ore', 'minecraft:deepslate_diamond_ore', 6, 5, -62, 14],
-  ['minecraft:redstone_ore', 'minecraft:deepslate_redstone_ore', 8, 7, -62, 14],
-  ['minecraft:lapis_ore', 'minecraft:deepslate_lapis_ore', 3, 6, -32, 32],
-  ['minecraft:gold_ore', 'minecraft:deepslate_gold_ore', 3, 8, -62, 30],
-  ['minecraft:iron_ore', 'minecraft:deepslate_iron_ore', 10, 8, -24, 72],
-  ['minecraft:copper_ore', 'minecraft:deepslate_copper_ore', 8, 9, -16, 100],
-  ['minecraft:coal_ore', 'minecraft:deepslate_coal_ore', 10, 10, 0, 140]
+  ['minecraft:diamond_ore', 'minecraft:deepslate_diamond_ore', 3, 4, -62, 14],
+  ['minecraft:redstone_ore', 'minecraft:deepslate_redstone_ore', 4, 6, -62, 14],
+  ['minecraft:lapis_ore', 'minecraft:deepslate_lapis_ore', 1, 6, -32, 32],
+  ['minecraft:gold_ore', 'minecraft:deepslate_gold_ore', 2, 6, -62, 30],
+  ['minecraft:iron_ore', 'minecraft:deepslate_iron_ore', 8, 7, -24, 72],
+  ['minecraft:copper_ore', 'minecraft:deepslate_copper_ore', 6, 8, -16, 100],
+  ['minecraft:coal_ore', 'minecraft:deepslate_coal_ore', 8, 9, 0, 140]
 ]
 
 function tdRetroBlocks() {
@@ -26,13 +26,14 @@ function tdRetroBlocks() {
   for (let i = 0; i < stone.length; i++) b.stone.add(Block.getBlock(stone[i]))
   for (let i = 0; i < deep.length; i++) b.deep.add(Block.getBlock(deep[i]))
   // по этим блокам видно, что в чанке уже была обычная генерация руд (или скрипт уже отработал)
-  b.marks.add(Block.getBlock('minecraft:deepslate_redstone_ore'))
+  // (редстоун не годится: он бывает в жилах Industrial Upgrade, а алмазов в них нет)
+  b.marks.add(Block.getBlock('minecraft:diamond_ore'))
   b.marks.add(Block.getBlock('minecraft:deepslate_diamond_ore'))
   for (let i = 0; i < TD_RETRO_ORES.length; i++) {
     let o = TD_RETRO_ORES[i]
     b.ores.push({ a: Block.getBlock(o[0]).defaultBlockState(), d: Block.getBlock(o[1]).defaultBlockState(), n: o[2], size: o[3], y0: o[4], y1: o[5] })
   }
-  b.mark = Block.getBlock('minecraft:deepslate_redstone_ore').defaultBlockState()
+  b.mark = Block.getBlock('minecraft:deepslate_diamond_ore').defaultBlockState()
   TD_RETRO.blocks = b
   return b
 }
@@ -60,8 +61,8 @@ function tdRetroChunk(level, cx, cz) {
       for (let s = 0; s < o.size; s++) {
         let pos = new BlockPos(x0 + x, y, z0 + z)
         let blk = level.getBlockState(pos).getBlock()
-        if (B.stone.contains(blk)) level.setBlock(pos, o.a, 2)
-        else if (B.deep.contains(blk)) { level.setBlock(pos, o.d, 2); if (k == 1) placedMark = true }
+        if (B.stone.contains(blk)) { level.setBlock(pos, o.a, 2); if (k == 0) placedMark = true }
+        else if (B.deep.contains(blk)) { level.setBlock(pos, o.d, 2); if (k == 0) placedMark = true }
         let dir = rnd(6)
         if (dir == 0 && x < 15) x++
         else if (dir == 1 && x > 0) x--
@@ -72,7 +73,7 @@ function tdRetroChunk(level, cx, cz) {
       }
     }
   }
-  // метка «чанк дополнен»: хотя бы одна глубинная редстоуновая руда
+  // метка «чанк дополнен»: хотя бы одна алмазная руда
   for (let t = 0; t < 80 && !placedMark; t++) {
     let pos = new BlockPos(x0 + rnd(16), minY + rnd(50), z0 + rnd(16))
     if (B.deep.contains(level.getBlockState(pos).getBlock())) { level.setBlock(pos, B.mark, 2); placedMark = true }

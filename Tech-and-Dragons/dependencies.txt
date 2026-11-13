@@ -72,7 +72,7 @@ Kotlin for Forge 4.12.0  (kotlinforforge-4.12.0-all.jar)
 Встроенные (jar-in-jar, отдельно не ставятся): Flywheel и Ponder (внутри Create), MixinExtras (внутри Create/Embeddium/ModernFix), Common Networking (внутри JourneyMap).
 
 СОБСТВЕННЫЕ ДОПОЛНЕНИЯ
-tdguide 3.0.0  (tdguide-3.0.0.jar) — книга-путеводитель
+tdguide 3.1.0  (tdguide-3.1.0.jar) — книга-путеводитель
     требует: Patchouli (книга) и KubeJS (выдача при входе, рецепт)
 resourcepacks\Retro-DE-Models.zip — ресурспак для Draconic Evolution
     требует: B:"fancyToolModels"=false в config\brandon3055\DraconicEvolution.cfg

@@ -3,8 +3,8 @@
 const GUIDE_NBT = '{"patchouli:book":"tdguide:guide"}'
 
 // Версия сборки у ХОСТА мира (скрипты выполняются на том компьютере, где лежит мир).
-// Если здесь не 1.6.0 — хост не поставил обновление, и руды в старых чанках не появятся.
-const TD_PACK_VERSION = '1.6.0'
+// Если здесь не 1.6.1 — хост не поставил обновление, и руды в старых чанках не появятся.
+const TD_PACK_VERSION = '1.6.1'
 
 PlayerEvents.loggedIn(event => {
   const player = event.player
